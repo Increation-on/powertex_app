@@ -1,0 +1,24 @@
+.logo {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo_disabled {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+img {
+    width: 115px;
+    height: 95px;
+    bottom: 10px;
+}
+
+.logo_wrapper {
+    position: relative;
+    margin-left: 25px;
+    bottom: 2px;
+}
+
+

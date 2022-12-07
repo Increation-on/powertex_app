@@ -1,0 +1,89 @@
+.main {
+  padding-top: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.main_background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 120px;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 600px;
+  top: 100px;
+  margin: auto;
+  height: 50px;
+  justify-content: center;
+  animation-duration: 1.2s;
+  animation-name: slidetop;
+  z-index: 10;
+}
+
+.description_one {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+  width: 600px;
+  top: 150px;
+  right: -50px;
+  height: 50px;
+  justify-content: center;
+  animation-duration: 1.2s;
+  animation-name: slideleft;
+  z-index: 30;
+}
+
+
+
+.description_two {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+  width: 600px;
+  top: 150px;
+  right: -850px;
+  height: 50px;
+  justify-content: center;
+  animation-duration: 1.5s;
+  animation-name: slideright;
+  z-index: 30;
+}
+
+
+@keyframes slidetop {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    right: 600px;
+  }
+  to {
+    right: -50px;
+  }
+}
+
+@keyframes slideright {
+  from {
+    right: -1500px;
+  }
+  to {
+    right: -850px;
+  }
+}

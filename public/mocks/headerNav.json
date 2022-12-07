@@ -1,0 +1,22 @@
+[
+    {
+        "title": "О компании",
+        "id": 1,
+        "path": "/about"
+    },
+    {
+        "title": "Оплата",
+        "id": 2,
+        "path": "/payment"
+    },
+    {
+        "title": "Доставка",
+        "id": 3,
+        "path": "/delivery"
+    },
+    {
+        "title": "Продукция",
+        "id": 4,
+        "path": "/product"
+    }
+]
