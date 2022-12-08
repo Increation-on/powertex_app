@@ -12,7 +12,6 @@ const Footer = () => {
           All rights reserved {year} ©
         </div>
       </div>
-      {/* <img className={styles.footer_background} src={footerBackground} alt="Powertex" /> */}
     </footer>
   )
 }

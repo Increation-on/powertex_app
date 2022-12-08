@@ -28,7 +28,7 @@ const HeaderTop = () => {
                     )
                 })}
             </ul>
-            {/* <img className={styles.header_background} src={headerBackground} alt="Powertex" /> */}
+            <img className={styles.header_background} src={headerBackground} alt="Powertex" />
         </header>
     )
 }
