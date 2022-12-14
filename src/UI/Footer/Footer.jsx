@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div classname={styles.menu_container}>
+      <div className={styles.menu_container}>
         <div className={styles.copyright}>
           All rights reserved {year} ©
         </div>

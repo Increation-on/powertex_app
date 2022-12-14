@@ -1,5 +1,4 @@
 .footer {
-    margin-top: 120px;
     display: flex;
     align-items: center;
     height: 100px;
@@ -14,7 +13,7 @@
 
 .copyright {
     margin-right: 30px;
-    color: #53524f;
+    color: white;
     cursor: default;
 }
 

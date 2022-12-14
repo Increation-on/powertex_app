@@ -3,6 +3,7 @@ import Delivery from "../pages/Delivery";
 import Main from "../pages/Main";
 import Payment from "../pages/Payment";
 import Product from "../pages/Product";
+import Products from "../pages/Products";
 
 
 export const routes = [
@@ -10,6 +11,7 @@ export const routes = [
     { path: "/about", component: About },
     { path: "/payment", component: Payment },
     { path: "/delivery", component: Delivery },
-    { psth: "/product", component: Product },
+    { path: "/products", component: Products },
     { path: "/", component: Main },
+    { path: "/products/product/:id", component: Product },
 ]

@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../Logo';
-import headerBackground from '../../images/header4.png';
 
 const HeaderTop = () => {
 
@@ -14,9 +13,7 @@ const HeaderTop = () => {
             const data = response.data;
             setMenu(data);
         }).catch(err => console.log(err));
-    }, [menu]);
-
-
+    }, []);
 
     return (
         <header className={styles.header}>
@@ -28,7 +25,6 @@ const HeaderTop = () => {
                     )
                 })}
             </ul>
-            <img className={styles.header_background} src={headerBackground} alt="Powertex" />
         </header>
     )
 }
