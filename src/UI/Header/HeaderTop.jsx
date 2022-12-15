@@ -17,11 +17,13 @@ const HeaderTop = () => {
 
     return (
         <header className={styles.header}>
-            <Logo/>
+            <Logo />
             <ul className={styles.menu_container}>
                 {menu && menu.map(el => {
                     return (
-                        <li key={el.id} className={styles.menu_item}><NavLink to={el.path}>{el.title}</NavLink></li>
+                        <li key={el.id} className={styles.menu_item}>
+                            <NavLink className={({ isActive }) => isActive ? styles.menu_item_active : styles.menu_item} to={el.path}>{el.title}</NavLink>
+                        </li>
                     )
                 })}
             </ul>

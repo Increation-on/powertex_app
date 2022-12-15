@@ -1,0 +1,44 @@
+.main_about {
+    margin-top: 110px;
+    width: 100%;
+    height: 100%;
+}
+
+.about_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.description {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h1 {
+    text-align: center;
+    font-size: larger;
+}
+
+.search {
+    border-right: 1px solid  black;
+    font-size: 50px;
+}
+
+.search_description {
+    margin-top: 170px;
+    padding-right: 30px;
+}
+
+.yandex_map {
+    display: flex;
+    border-right: 1px solid black;
+}
+
+.address {
+    margin-top: 100px;
+    margin-right: 50px;
+    font-size: 50px;
+}

@@ -6,24 +6,26 @@ import axios from 'axios';
 
 const Product = () => {
 
-    const params = useParams();
-    const paramsId = Number(params.id);
-    const productID = paramsId - 1;
+  const params = useParams();
+  const paramsId = Number(params.id);
+  const productID = paramsId - 1;
 
-    const [products, setProducts] = useState();
+  const [detailedProducts, setDetailedProducts] = useState();
 
-    useEffect(() => {
-        axios.get('/mocks/products.json').then(response => {
-          const data = response.data;
-          setProducts(data);
-        }).catch(err => console.log(err));
-      }, []);
+  useEffect(() => {
+    axios.get('/mocks/DetailedProducts.json').then(response => {
+      const data = response.data;
+      setDetailedProducts(data);
+    }).catch(err => console.log(err));
+  }, []);
 
-    return (
-        <div className={styles.product_wrapper}>
-            {products && products[productID].id}
-        </div>
-    )
+  return (
+    <div className={styles.product_main}>
+      {detailedProducts && <div className={styles.product_wrapper}>
+        <div className={styles.product_background} style={{ backgroundImage: `url(${detailedProducts[productID].img})` }}></div>
+      </div>}
+    </div>
+  )
 }
 
 export default Product;
