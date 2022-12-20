@@ -24,7 +24,7 @@ const Products = () => {
           return (
             <Link to={`${product.url}/${product.id}`} key={product.id}
               className={styles.preview_card}
-              style={{ backgroundImage: ` url(${product.img})` }}
+              style={{ backgroundImage: `url(${product.img})` }}
             >
               <div className={styles.title}>{product.title}</div>
               <div className={styles.description}>{product.description}</div>
