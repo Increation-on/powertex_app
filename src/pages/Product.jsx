@@ -8,6 +8,7 @@ import 'react-tabs/style/react-tabs.css';
 
 import axios from 'axios';
 import membrane from './../images/C80.jpg';
+import applicate from './../images/detailedApplicate/A1.png';
 
 const Product = () => {
 
@@ -35,7 +36,7 @@ const Product = () => {
         <div className={styles.product_tabs}>
           <Tabs disableUpDownKeys={true}>
             <TabList>
-              <Tab defaultfocus="true"><div className={styles.tabs_header}>Описание</div></Tab> 
+              <Tab defaultfocus="true"><div className={styles.tabs_header}>Описание</div></Tab>
               <Tab><div className={styles.tabs_header}>Применение</div></Tab>
               <Tab><div className={styles.tabs_header}>Технические характеристики</div></Tab>
             </TabList>
@@ -48,7 +49,7 @@ const Product = () => {
                 <p className={styles.product_description}>
                   <b>Супердиффузионная мембрана </b>— одна из современных и востребованных разновидностей гидро-ветрозащитных мембран. Основная функция — защита утеплителя в конструкции кровли и фасадов от
                   разрушающего влияния внешних факторов (протечки кровли или фасада) и вывода излишков пара из
-                  конструкции здания. Мембрана выпускается поверхностной плотностью от 60 до 180г/м?. Стандартная
+                  конструкции здания. Мембрана выпускается поверхностной плотностью от 60 до 180г/м<sup>2</sup>. Стандартная
                   ширина материала 1500 мм.Рабочие температуры эксплуатации от -40<sup>o</sup> до +80<sup>o</sup>, состав материала
                   100% полипропилен.
                 </p>
@@ -65,10 +66,77 @@ const Product = () => {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className={styles.schema}> <h1>Применение материала <span>Powertex A</span></h1></div>
+              <div className={styles.applicate_wrapper}>
+                <div className={styles.applicate_description}>
+                  <h1>Применение материала <span>Powertex A</span> в конструкции укрепленной кровли</h1>
+                  <img src={applicate} alt="a1" />
+                  <p>Powertex применяется как подкровленная ветровлагозащитная мембрана
+                    вутеплённых кровлях суглом наклона свыше 35° с различными покрытиями:
+                    металлочерепица, натуральная черепица, мягкие битумные плитки, про-
+                    филированные листы и др. Устанавливается над утеплителем поверх стропил
+                    под обрешеткой. Служит для защиты утеплителя и несущих элементов от под
+                    кровельного конденсата и как дополнительная защита от ветра.
+                    <b style={{ color: "red" }}> Не может применяться в качестве временной кровли!</b>
+                  </p>
+                </div>
+                <div className={styles.applicate_description}>
+                  <h1>Применение материала <span>Powertex A</span> в конструкции укрепленной кровли</h1>
+                  <img src={applicate} alt="a1" />
+                  <p>Powertex применяется как подкровленная ветровлагозащитная мембрана
+                    вутеплённых кровлях суглом наклона свыше 35° с различными покрытиями:
+                    металлочерепица, натуральная черепица, мягкие битумные плитки, про-
+                    филированные листы и др. Устанавливается над утеплителем поверх стропил
+                    под обрешеткой. Служит для защиты утеплителя и несущих элементов от под
+                    кровельного конденсата и как дополнительная защита от ветра.
+                    <b style={{ color: "red" }}> Не может применяться в качестве временной кровли!</b>
+                  </p>
+                </div>
+                <div className={styles.applicate_description}>
+                  <h1>Применение материала <span>Powertex A</span> в конструкции укрепленной кровли</h1>
+                  <img src={applicate} alt="a1" />
+                  <p>Powertex применяется как подкровленная ветровлагозащитная мембрана
+                    вутеплённых кровлях суглом наклона свыше 35° с различными покрытиями:
+                    металлочерепица, натуральная черепица, мягкие битумные плитки, про-
+                    филированные листы и др. Устанавливается над утеплителем поверх стропил
+                    под обрешеткой. Служит для защиты утеплителя и несущих элементов от под
+                    кровельного конденсата и как дополнительная защита от ветра.
+                    <b style={{ color: "red" }}> Не может применяться в качестве временной кровли!</b>
+                  </p>
+                </div>
+
+              </div>
             </TabPanel>
+
             <TabPanel>
-              <h2>SpeciFICATIONS</h2>
+              <div className={styles.specifications_wrapper}>
+                <h1>Технические характеристики</h1>
+                <div className={styles.specifications_table}>
+                  <div className={styles.specifications_table_row}>
+                    <span>Плотность</span>
+                    <span>80 г/м</span>
+                  </div>
+                  <div className={styles.specifications_table_row}>
+                    <span>Состав</span>
+                    <span>полипропелен</span>
+                  </div>
+                  <div className={styles.specifications_table_row}>
+                    <span>Разрывная нагрузка прод./попер., Н/5см </span>
+                    <span>177/29</span>
+                  </div>
+                  <div className={styles.specifications_table_row}>
+                    <span>Разрывная нагрузка прод./попер., Н/5см </span>
+                    <span>177/29</span>
+                  </div>
+                  <div className={styles.specifications_table_row}>
+                    <span>Разрывная нагрузка прод./попер., Н/5см </span>
+                    <span>177/29</span>
+                  </div>
+                  <div className={styles.specifications_table_row}>
+                    <span>Разрывная нагрузка прод./попер., Н/5см </span>
+                    <span>177/29</span>
+                  </div>
+                </div>
+              </div>
             </TabPanel>
           </Tabs>
         </div>
