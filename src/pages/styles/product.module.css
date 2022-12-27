@@ -31,12 +31,6 @@
     height: 400px;
 }
 
-.product_tabs {
-    margin-top: 30px;
-    padding-bottom: 30px;
-
-}
-
 .product_description_title {
     padding-top: 30px;
     text-align: center;
@@ -58,8 +52,17 @@
     margin-left: 40px;
 }
 
+.product_description span {
+    color: red;
+}
+
 .tabs_header {
     font-size: 24px;
+}
+
+.product_tabs {
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 .applicate_wrapper {
@@ -83,8 +86,12 @@
 .applicate_description img {
     margin-top: 30px;
     padding-bottom: 30px;
-    width: 450px;
+    width: 40%;
     height: 300px;
+}
+
+.applicate_description span {
+    color: red
 }
 
 .specifications_table {
@@ -120,7 +127,3 @@
 .specifications_table_row:nth-child(even) {
     background-color: rgb(221, 216, 216);
 }
-
-
-
-
