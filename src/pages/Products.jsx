@@ -22,7 +22,8 @@ const Products = () => {
 
         {products && products.map(product => {
           return (
-            <Link to={`${product.url}/${product.id}`} key={product.id}
+            <Link to={`${product.url}/${product.id}`}key={product.id} 
+            // 
               className={styles.preview_card}
               style={{ backgroundImage: `url(${product.img})` }}
             >

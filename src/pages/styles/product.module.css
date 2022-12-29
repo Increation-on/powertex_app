@@ -108,15 +108,20 @@
     justify-content: space-between;
     padding: 10px;
     font-size: 26px;
+    
 }
 
 .specifications_table_row span:first-child {
+    text-align: left;
     margin-left: 40px;
     font-weight: bold;
 }
 
 .specifications_table_row span:nth-child(2) {
     margin-right: 40px;
+    text-align: right;
+    display: flex;
+    align-items: center;
 }
 
 .specifications_wrapper h1 {
@@ -126,4 +131,14 @@
 
 .specifications_table_row:nth-child(even) {
     background-color: rgb(221, 216, 216);
+}
+
+
+.m_table {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid red;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
 }

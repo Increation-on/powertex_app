@@ -4,48 +4,48 @@
         "id": 1,
         "img": "/images/products/C80.jpg",
         "description": "Simply dummy text of the printing a been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url": "product"
+        "url": "/products"
     },
     {
         "title": "Powertex B",
         "id": 2,
         "img": "/images/products/C80.jpg",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url":"product"
+        "url":"/products"
     },
     {
         "title": "Powertex C",
         "id": 3,
         "img": "/images/products/C80.jpg",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url": "product"
+        "url": "/products"
     },
     {
         "title": "Powertex D",
         "id": 4,
         "img": "/images/products/C80.jpg",
         "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url": "product"
+        "url": "/products"
     },
     {
         "title": "Powertex M90",
         "id": 5,
         "img": "/images/products/C80.jpg",
         "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url": "product"
+        "url": "/products"
     },
     {
         "title": "Powertex M110",
         "id": 6,
         "img": "/images/products/C80.jpg",
         "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url": "product"
+        "url": "/products"
     },
     {
         "title": "Powertex M140",
         "id": 7,
         "img": "/images/products/C80.jpg",
         "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url": "product"
+        "url": "/products"
     }
 ]

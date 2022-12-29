@@ -89,6 +89,7 @@ const Product = () => {
                       </div>
                     )
                   })}
+                  {/* ADD Spec To m110 and m140 */}
                 </div>
               </div>
             </TabPanel>
