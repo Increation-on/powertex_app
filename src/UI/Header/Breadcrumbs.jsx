@@ -14,9 +14,9 @@ const Breadcrumbs = () => {
     return location.pathname === "/main" || location.pathname === "/" ? null
         : <ul className={styles.breadcrumbs}>
             {breadcrumbs.map(({ match, breadcrumb }, index) => {
-                return <li key={match.pathname} className={index === breadcrumbs.length - 1 ? styles.breadcrumbs__item_last : "breadcrumbs__item"}>
+                return <li key={match.pathname} className={index === breadcrumbs.length - 1 ? styles.breadcrumb_last : styles.breadcrumb}>
                     <Link to={match.pathname}
-                        className={index === breadcrumbs.length - 1 ? styles.last__breadcrumb_dis : "breadcrumbs__name"}>
+                        className={index === breadcrumbs.length - 1 ? styles.breadcrumb_last : styles.breadcrumb}>
                         {breadcrumb}
                     </Link>
                 </li>
