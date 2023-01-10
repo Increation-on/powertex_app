@@ -25,17 +25,6 @@ const Product = () => {
   }, []);
 
 
-
-  // useEffect(() => {
-  //   if (detailedProducts) {
-  //     let currentProduct = detailedProducts[productID];
-  //     console.log(JSON.stringify(currentProduct.description[0].text));
-  //   }
-  // }, [detailedProducts]);
-
-
-
-
   return detailedProducts ? (
     <div className={styles.product_main}>
       <div className={styles.product_wrapper}>
@@ -89,7 +78,6 @@ const Product = () => {
                       </div>
                     )
                   })}
-                  {/* ADD Spec To m110 and m140 */}
                 </div>
               </div>
             </TabPanel>

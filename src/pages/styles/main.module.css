@@ -12,76 +12,111 @@
   width: 100%;
 }
 
-/* .main_background {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 110px;
-} */
-
-.description {
+.animation_top {
   position: relative;
-  display: flex;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  width: 600px;
-  top: 100px;
+  background-image: url('./../../images/animationFor/anim_logo.png');
+  background-size: 100% 100%;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 400px;
+  height: 80px;
+  top: 60px;
   margin: auto;
-  height: 50px;
-  justify-content: center;
   animation-duration: 1.2s;
   animation-name: slidetop;
   z-index: 10;
 }
 
-.description_one {
+.animation_left {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: aquamarine;
-  width: 600px;
+  color: white;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
+  width: 400px;
   top: 150px;
-  right: -50px;
+  right: -340px;
   height: 50px;
   justify-content: center;
-  animation-duration: 1.2s;
+  animation-duration: 2.4s;
   animation-name: slideleft;
   z-index: 30;
+  pointer-events: none;
 }
 
 
 
-.description_two {
+.animation_right {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: aquamarine;
-  width: 500px;
+  color: white;
+  font-size: 34px;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  width: 400px;
   top: 150px;
-  right: -850px;
+  right: -740px;
   height: 50px;
   justify-content: center;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
   animation-name: slideright;
   z-index: 30;
+  pointer-events: none;
+}
+
+
+.main_button_more {
+  position: relative;
+  bottom: -250px;
+  left: calc(50% - (170px/2));
+  background-image: url('./../../images/bg_button_2.png');
+  color: white;
+  border-radius: 5px;
+  text-shadow: 2px 1px 1px black;
+  font-size: 28px;
+  width: 170px;
+  height: 75px;
+  outline-style: outset;
+  outline-width: 2px;
+  outline-color: aliceblue;
+  cursor: pointer;
+  transition: .2s;
+  transform: scale(1);
+  animation-duration: 2.6s;
+  animation-name: slidebottom;
+}
+
+.main button a {
+  color: aliceblue;
+}
+
+.main_button_more:hover {
+  transition: .2s ease-in;
+  width: 172px;
+  height: 77px;
 }
 
 
 @keyframes slidetop {
   from {
-    top: 0;
+    top: -30px;
   }
+
   to {
-    top: 100px;
+    top: 60px;
   }
 }
 
 @keyframes slideleft {
   from {
-    right: 600px;
+    right: 400px;
   }
+
   to {
-    right: -50px;
+    right: -340px;
   }
 }
 
@@ -89,7 +124,18 @@
   from {
     right: -1500px;
   }
+
   to {
-    right: -850px;
+    right: -740px;
+  }
+}
+
+@keyframes slidebottom {
+  from {
+    bottom: -500px;
+  }
+
+  to {
+    bottom: -250px;
   }
 }
