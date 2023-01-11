@@ -1,6 +1,5 @@
-import styles from './styles/logo.module.css';
-import logo from './../images/logo3.png';
-import { useEffect } from 'react';
+import styles from './../styles/logo.module.css';
+import logo from './../../images/logo3.png';
 import { useLocation, NavLink } from 'react-router-dom';
 
 

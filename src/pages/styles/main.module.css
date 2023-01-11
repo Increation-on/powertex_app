@@ -80,14 +80,16 @@
   width: 170px;
   height: 75px;
   outline-style: outset;
-  outline-width: 2px;
-  outline-color: aliceblue;
+  outline-width: 1.7px;
+  outline-color: rgb(48, 48, 46);
   cursor: pointer;
   transition: .2s;
   transform: scale(1);
   animation-duration: 2.6s;
   animation-name: slidebottom;
 }
+
+
 
 .main button a {
   color: aliceblue;

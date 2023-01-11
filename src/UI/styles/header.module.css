@@ -16,8 +16,8 @@
 }
 
 .menu_item {
-    margin-left: 15px;
-    font-size: 22px;
+    margin-left: 12px;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     color: #53524f;
@@ -29,38 +29,65 @@
 }
 
 .menu_item_active {
-    margin-left: 15px;
-    font-size: 22px;
+    margin-left: 12px;
     font-weight: bold;
     text-decoration: none;
     color: #fd3400;
     cursor: default;
 }
 
+.telephone_wrapper {
+    margin-left: 70px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #53524f;
+    cursor: default;
+}
+
+.telephone_icon {
+    margin-right: 3px;
+    height: 23px;
+    width: 23px;
+    background-image: url('./../../images/phone1.png');
+    background-size: 100% 100%;
+}
+
+.telephone_numbers {
+    display: flex;
+    flex-direction: column;
+}
+
 .breadcrumbs {
     height: 40px;
-    margin-top: 125px;
+    margin-top: 117px;
     display: flex;
     margin-left: 20px;
     align-items: center;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .breadcrumbs li:not(:first-child) {
     margin-left: 15px;
 }
 
-.breadcrumb {
+.breadcrumb:not(:last-child)::after {
+    color: #53524f;
+    margin-left: 5px;
+    content: " >";
+}
+
+.breadcrumb_pointer_disable {
+    display: none;
+}
+
+.breadcrumb a {
     color: #53524f;
 }
 
-.breadcrumb:not(:last-child)::after {
-    margin-left: 5px;
-    content: ">";
-}
-
-.breadcrumb:hover {
-    color: black;
-    font-size: 16.2px;
+.breadcrumb a:hover {
+    color: red;
 }
 
 .breadcrumb_last {

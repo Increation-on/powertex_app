@@ -1,8 +1,10 @@
 import styles from './../styles/header.module.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import Logo from '../Logo';
+import { NavLink } from 'react-router-dom';
+import Logo from './Logo';
+import Phones from './Phones';
+
 
 const HeaderTop = () => {
 
@@ -18,6 +20,7 @@ const HeaderTop = () => {
     return (
         <header className={styles.header}>
             <Logo />
+            <Phones />
             <ul className={styles.menu_container}>
                 {menu && menu.map(el => {
                     return (
