@@ -3,6 +3,7 @@ import styles from './styles/products.module.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Loader from './../UI/Loader';
 
 
 const Products = () => {
@@ -20,7 +21,7 @@ const Products = () => {
     <main className={styles.main_products}>
       <div className={styles.products_wrapper}>
 
-        {products && products.map(product => {
+        {products ? products.map(product => {
           return (
             <Link to={`${product.url}/${product.id}`} key={product.id}
               // 
@@ -31,7 +32,7 @@ const Products = () => {
               <div className={styles.description}>{product.description}</div>
             </Link>
           )
-        })}
+        }) : <Loader/>}
 
       </div>
     </main>

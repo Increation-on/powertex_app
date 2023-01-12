@@ -1,5 +1,4 @@
 import styles from './../styles/footer.module.css';
-import footerBackground from '../../images/bg_header.jpg'
 
 const Footer = () => {
 

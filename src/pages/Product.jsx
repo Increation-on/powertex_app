@@ -7,6 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 import axios from 'axios';
+import Loader from './../UI/Loader';
 
 
 const Product = () => {
@@ -85,7 +86,7 @@ const Product = () => {
         </div>
       </div>
     </div>
-  ) : <div>loading</div>
+  ) : <Loader/>
 }
 
 export default Product;

@@ -3,49 +3,49 @@
         "title": "Powertex A",
         "id": 1,
         "img": "/images/products/C80.jpg",
-        "description": "Simply dummy text of the printing a been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description": "Гидро-ветрозащита «Powertex А» применяется для защиты утеплителя от намокания, экономии тепла в помещении. Помогает избежать образования конденсата в утеплителе в отапливаемом помещении...",
         "url": "/products"
     },
     {
         "title": "Powertex B",
         "id": 2,
         "img": "/images/products/C80.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "url":"/products"
+        "description": "Пароизоляция «Powertex B» применяется в качестве паробарьера для защиты утеплителя и других элементов строительной конструкции от насыщения парами воды изнутри помещения в зданиях всех типов. Материал укладывается...",
+        "url": "/products"
     },
     {
         "title": "Powertex C",
         "id": 3,
         "img": "/images/products/C80.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description": "Гидро-ветрозащита «Powertex C» Применяется для защиты подкровельных пространств от пыли, копоти и влажности, возникающей вследствие дождя и снега, а в чердачных помещениях предохраняет теплоизоляцию от воздействия...",
         "url": "/products"
     },
     {
         "title": "Powertex D",
         "id": 4,
         "img": "/images/products/C80.jpg",
-        "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description": "Гидро-пароизоляция «Powertex D» - материал на основе высокопрочного полипропиленового тканого полотна. Применяется в строительстве для защиты конструкции здания от проникновения из атмосферы влаги и конденсата...",
         "url": "/products"
     },
     {
         "title": "Powertex M90",
         "id": 5,
         "img": "/images/products/C80.jpg",
-        "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description": "Подкровельная мембрана «Powertex М 90», плотностью 90 г/м2, применяется для защиты подкровельных конструкций, теплоизоляции и чердачного помещения от влажности, возникающей вследствие дождя и снега, а также...",
         "url": "/products"
     },
     {
         "title": "Powertex M110",
         "id": 6,
         "img": "/images/products/C80.jpg",
-        "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description": "Подкровельная мембрана «Powertex М 110», плотностью 110 г/м2, применяется для защиты подкровельных конструкций, теплоизоляции и чердачного помещения от влажности, возникающей вследствие дождя и снега, а также...",
         "url": "/products"
     },
     {
         "title": "Powertex M140",
         "id": 7,
         "img": "/images/products/C80.jpg",
-        "description": "Lorem Ipsum is simply dummindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description": "Подкровельная мембрана «Powertex М 140», плотностью 135 г/м2, применяется для защиты подкровельных конструкций, теплоизоляции и чердачного помещения от влажности, возникающей вследствие дождя и снега, а также...",
         "url": "/products"
     }
 ]

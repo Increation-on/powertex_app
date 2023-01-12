@@ -8,7 +8,7 @@ const Main = () => {
         <div className={styles.animation_top}></div>
         <div className={styles.animation_left}>Сильная изоляция</div>
         <div className={styles.animation_right}>Для вашей кровли</div>
-        <button className={styles.main_button_more}><Link to={`/products`}>Подробнее</Link></button>
+        <Link className={styles.main_button_more} to={`/products`}>Подробнее</Link>
       </div>
     </main>
   )

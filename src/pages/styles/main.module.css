@@ -20,7 +20,7 @@
   border-bottom-right-radius: 15px;
   width: 400px;
   height: 80px;
-  top: 60px;
+  top: 8%;
   margin: auto;
   animation-duration: 1.2s;
   animation-name: slidetop;
@@ -37,7 +37,7 @@
   text-shadow: 2px 2px 2px black;
   width: 400px;
   top: 150px;
-  right: -340px;
+  right: -24%;
   height: 50px;
   justify-content: center;
   animation-duration: 2.4s;
@@ -58,7 +58,7 @@
   text-transform: uppercase;
   width: 400px;
   top: 150px;
-  right: -740px;
+  right: -50%;
   height: 50px;
   justify-content: center;
   animation-duration: 2.5s;
@@ -69,8 +69,12 @@
 
 
 .main_button_more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
   position: relative;
-  bottom: -250px;
+  bottom: -36%;
   left: calc(50% - (170px/2));
   background-image: url('./../../images/bg_button_2.png');
   color: white;
@@ -85,14 +89,8 @@
   cursor: pointer;
   transition: .2s;
   transform: scale(1);
-  animation-duration: 2.6s;
+  animation-duration: 2.5s;
   animation-name: slidebottom;
-}
-
-
-
-.main button a {
-  color: aliceblue;
 }
 
 .main_button_more:hover {
@@ -104,40 +102,40 @@
 
 @keyframes slidetop {
   from {
-    top: -30px;
+    top: -8%;
   }
 
   to {
-    top: 60px;
+    top: 8%;
   }
 }
 
 @keyframes slideleft {
   from {
-    right: 400px;
+    right: 27%;
   }
 
   to {
-    right: -340px;
+    right: -24%;
   }
 }
 
 @keyframes slideright {
   from {
-    right: -1500px;
+    right: -100%;
   }
 
   to {
-    right: -740px;
+    right: -50%;
   }
 }
 
 @keyframes slidebottom {
   from {
-    bottom: -500px;
+    bottom: -80%;
   }
 
   to {
-    bottom: -250px;
+    bottom: -36%;
   }
 }
