@@ -139,3 +139,115 @@
     bottom: -36%;
   }
 }
+
+/* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media all and (max-width: 853px) {
+
+  .main_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .animation_top {
+    /* background-size: 100% 100%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    width: 45%;
+    height: 8vh;
+    /* top: 21vh; */
+    margin: 0 auto;
+    margin-top: 25vh;
+    /* animation-duration: 0s; */
+    /* animation-name: slidetop; */
+    z-index: 10;
+    position: inherit;
+  }
+
+
+
+  .animation_left {
+    /* position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    width: 400px;
+    top: 25%;
+    right: -24%;
+    height: 50px;
+    justify-content: center;
+    animation-duration: 0s;
+    animation-name: slideleft;
+    z-index: 30;
+    pointer-events: none; */
+    position: inherit;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .animation_right {
+    /* position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 34px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    width: 400px;
+    top: 27%;
+    right: -24%;
+    height: 50px;
+    justify-content: center;
+    animation-duration: 0s;
+    animation-name: slideright;
+    z-index: 30;
+    pointer-events: none; */
+    position: inherit;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .main_button_more {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    position: relative;
+    bottom: -36%;
+    left: calc(50% - (170px/2));
+    background-image: url('./../../images/bg_button_2.png');
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 1px 1px black;
+    font-size: 28px;
+    width: 170px;
+    height: 75px;
+    outline-style: outset;
+    outline-width: 1.7px;
+    outline-color: rgb(48, 48, 46);
+    cursor: pointer;
+    transition: .2s;
+    transform: scale(1);
+    animation-duration: 2.5s;
+    animation-name: slidebottom; */
+    position: inherit;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+}
+
+@media all and (max-width: 765px) {
+  .animation_left {
+    font-size: 5vw;
+  }
+
+  .animation_right {
+    font-size: 5vw;
+  }
+}
