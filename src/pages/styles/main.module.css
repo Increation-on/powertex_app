@@ -112,7 +112,7 @@
 
 @keyframes slideleft {
   from {
-    right: 27%;
+    right: 0;
   }
 
   to {
@@ -122,7 +122,7 @@
 
 @keyframes slideright {
   from {
-    right: -100%;
+    right: -74%;
   }
 
   to {
