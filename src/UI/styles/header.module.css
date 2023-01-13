@@ -121,3 +121,10 @@
         margin-top: 15px;
     }
 }
+
+@media all and (max-width: 452px) {
+    .menu_item {
+        margin-left: 7px;
+        font-size: 17px;
+    }
+  }

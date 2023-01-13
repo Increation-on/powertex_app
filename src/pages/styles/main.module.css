@@ -242,12 +242,12 @@
 
 }
 
-@media all and (max-width: 765px) {
+@media all and (max-width: 550px) {
   .animation_left {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .animation_right {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 }
