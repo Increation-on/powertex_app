@@ -21,4 +21,12 @@ img {
     bottom: 2px;
 }
 
+@media all and (max-width: 853px) {
+    img {
+        margin-top: 10px;
+        width: 90px;
+        height: 70px;
+    }
+}
+
 
