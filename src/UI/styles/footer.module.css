@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
     height: 90px;
     width: 100%;
     background-image: url('./../../images/bg_footer.png');
@@ -16,4 +17,5 @@
     color: white;
     cursor: default;
 }
+
 
