@@ -36,5 +36,8 @@ body {
   min-height: 100%;
 }
 
-
-
+@media all and (max-width: 550px) {
+  .wrapper {
+    min-height: 70%;
+  }
+}

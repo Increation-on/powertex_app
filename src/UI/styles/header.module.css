@@ -116,12 +116,17 @@
     .header {
         flex-direction: column;
         justify-content: space-around;
-        height: 30%;
+        height: 35vh;
+        padding-bottom: 3px;
     }
 
     .telephone_wrapper {
         margin-top: 15px;
         margin-left: 10px;
+    }
+
+    .menu_container {
+        margin-top: 15px;
     }
 }
 
@@ -130,6 +135,7 @@
         margin-left: 7px;
         font-size: 17px;
     }
+
 }
 
 
@@ -138,7 +144,8 @@
         margin-left: 5px;
         font-size: 4vw;
     }
+
     .telephone_numbers {
-        font-size: 6vw;
+        font-size: 5.6vw;
     }
 }
