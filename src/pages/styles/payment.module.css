@@ -36,3 +36,72 @@ p {
     font-size: 34px;
     width: 80vw;
 }
+
+
+/* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!! */
+
+@media all and (max-width: 852px) {
+    .payment_wrapper {
+        margin-top: 10vh;
+    }  
+}
+
+@media all and (max-width: 598px) {
+    
+    .payment_header {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 26px;
+    }
+
+    .payment_bg {
+        height: 70%;
+    }
+}
+
+@media all and (max-width: 415px) {
+    
+    .payment_wrapper {
+        margin-top: 15vh;
+        height: 80vh;
+    }  
+
+    .payment_bg {
+        width: 90%;
+        height: 70vh;
+        margin-bottom: 5vh;
+    }
+    .payment_header {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 411px) {
+    
+    .payment_wrapper {
+        height: 100vh;
+    }  
+    p {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-height: 667px) {
+    .payment_wrapper {
+        margin-top: 15vh;
+        height: 90vh;
+    }  
+}
+
+@media all and (max-width: 326px) {
+    p {
+        font-size: 20px;
+    }
+}
