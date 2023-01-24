@@ -52,6 +52,7 @@ const Product = () => {
                 )
               })}
             </TabPanel>
+
             <TabPanel>
               <div className={styles.applicate_wrapper}>
                 {detailedProducts[productID].applicate.map(item => {
@@ -66,6 +67,7 @@ const Product = () => {
                 })}
               </div>
             </TabPanel>
+            
             <TabPanel>
               <div className={styles.specifications_wrapper}>
                 <h1>{detailedProducts[productID].specifications.title}</h1>
