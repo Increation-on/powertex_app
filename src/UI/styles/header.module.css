@@ -112,7 +112,7 @@
     }
 }
 
-@media all and (max-width: 853px) {
+@media all and (max-width: 859px) {
     .header {
         flex-direction: column;
         justify-content: space-around;
@@ -130,7 +130,7 @@
     }
 }
 
-@media all and (max-width: 452px) {
+@media all and (max-width: 457px) {
     .menu_item {
         margin-left: 7px;
         font-size: 17px;
@@ -139,7 +139,7 @@
 }
 
 
-@media all and (max-width: 395px) {
+@media all and (max-width: 401px) {
     .menu_item {
         margin-left: 5px;
         font-size: 4vw;
@@ -147,5 +147,17 @@
 
     .telephone_numbers {
         font-size: 5.6vw;
+    }
+}
+
+@media all and (max-width: 269px) {
+    .menu_item {
+        font-size: 3.6vw;
+    }
+}
+
+@media all and (max-width: 208px) {
+    .menu_item {
+        margin-left: 2px;
     }
 }

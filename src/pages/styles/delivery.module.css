@@ -41,3 +41,38 @@ p {
 span {
     font-weight: 500;
 }
+
+
+
+/* MEDIA QUERY !!!!!!!!!!!!!!!!!! 11111111111!!!!!!!!!!!!!!!
+!!!!!!!!1111111!!!!!!!!!!*/
+
+
+
+@media all and (max-width: 853px) {
+    .delivery_wrapper {
+        margin-top: 15vh;
+    }
+}
+
+@media all and (max-width: 290px) {
+    .delivery_header {
+        font-size: 15vw;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .delivery_bg {
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media all and (min-height: 915px) {
+    .delivery_bg {
+        height: 70%;
+        width: 95%;
+    }
+}
+
+
