@@ -159,7 +159,7 @@
     }
 
     .specifications_table_row span:last-child {
-        border-top: 1px solid black;
+        border-top: 1px solid #53524f;;
         margin-right: 0px;
         margin-top: 12px;
     }

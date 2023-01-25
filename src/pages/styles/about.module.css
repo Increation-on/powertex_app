@@ -9,35 +9,213 @@
     justify-content: space-around;
 }
 
-.description {
-    width: 300px;
+.about_description {
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    font-size: 20px;
+    color: #53524f;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
-.description h1 {
+.about_description h1 {
+    color: #53524f;
     text-align: center;
-    font-size: larger;
+    font-size: 36px;
 }
 
-.search {
-    border-right: 1px solid  black;
-    font-size: 50px;
+.about_address {
+    color: #53524f;
+    border-right: 1.5px solid#53524f;
+    border-left: 1.5px solid#53524f;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
 }
 
-.search_description {
-    margin-top: 170px;
-    padding-right: 30px;
+.about_address_description {
+    margin-top: 7vh;
+    padding-left: 30px;
 }
+
+.about_address_description_column {
+    display: none;
+}
+
+.about_search_column {
+    display: none;
+}
+
+.about_address_item {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 
 .yandex_map {
+    color: #53524f;
     display: flex;
-    border-right: 1px solid black;
+    border-right: 1px solid #53524f;
 }
 
-.address {
-    margin-top: 100px;
-    margin-right: 50px;
-    font-size: 50px;
+.about_search {
+    padding-left: 20px;
+    margin-top: 15vh;
+    margin-right: 30px;
+    font-size: 45px;
+}
+
+.yandex_map iframe {
+    height: 100vh;
+}
+
+
+/* MEDIA QUERY !!!!!!!!!!11111111111!!!!!!!!!!!!!!!!!!!!!!!!11111111111!
+!!!!!!!!!!!!!!1111111!!!!!!!!!!!!!!!! */
+
+
+@media all and (max-width: 1185px) {
+    .about_description h1 {
+        font-size: 30px;
+    }
+
+    .about_description {
+        font-size: 1.6vw;
+    }
+
+    .about_address {
+        font-size: 40px;
+    }
+
+    .about_address_item {
+        font-size: 20px;
+    }
+
+    .about_search {
+        font-size: 40px;
+    }
+
+    .yandex_map iframe {
+        height: 70vh;
+        width: 40vw;
+    }
+}
+
+@media all and (max-width: 980px) {
+    .about_description h1 {
+        font-size: 3vw;
+    }
+
+    .about_description {
+        font-size: 1.7vw;
+    }
+
+    .about_address {
+        font-size: 4vw;
+    }
+
+    .about_address_item {
+        font-size: 2vw;
+    }
+
+    .about_search {
+        font-size: 4vw;
+    }
+
+    .yandex_map iframe {
+        height: 70vh;
+        width: 40vw;
+    }
+}
+
+@media all and (max-width: 859px) {
+    .main_about {
+        margin-top: 20vh;
+    }
+
+    .about_address_description {
+        padding-left: 10px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .about_wrapper {
+        flex-direction: column;
+    }
+
+    .about_description h1 {
+        font-size: 5vw;
+    }
+
+    .about_description {
+        width: 100%;
+    }
+    .about_description_text {
+        margin-top: 5px;
+        font-size: 3.5vw;
+        text-align: left;
+        text-indent: 4vw;
+        padding-bottom: 10px;
+    }
+
+    /* /// */
+
+    .about_address {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid black;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 4vw;
+    }
+    .about_address_description_row {
+        display: none;
+    }
+    .about_address_description_column {
+        display: block;
+    }
+    .about_address_description {
+        margin-top: 1vh;
+        text-align: center;
+        font-size: 5.5vw;
+    }
+    .about_address_item {
+        font-size: 4vw;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* ///// */
+
+    .yandex_map {
+        border-right: none;
+        flex-direction: column;
+        border-top: none;
+        border-top: 1px solid black;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about_search_row {
+        display: none;
+    }
+    .about_search_column {
+        display: block;
+    }
+    .about_search {
+        padding-left: 0px;
+        margin-top: 1vh;
+        margin-right: 0px;
+        text-align: center;
+        font-size: 5.5vw;
+    }
+    .yandex_map iframe {
+        margin: 0 auto;
+        height: 45vh;
+        width: 90vw;
+        margin-top: 15px;
+        padding-bottom: 5px;
+    }
 }
