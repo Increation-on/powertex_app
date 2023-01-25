@@ -83,6 +83,6 @@ p {
 
 @media all and (max-width: 380px) {
      .payment_wrapper {
-        height: 50vh;
+        height: 60vh;
     }
 } 
