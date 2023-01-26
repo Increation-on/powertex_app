@@ -146,7 +146,7 @@
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-@media all and (max-width: 853px) {
+@media all and (max-width: 859px) {
 
   .main_wrapper {
     display: flex;
@@ -158,12 +158,10 @@
     width: 45%;
     height: 8vh;
     margin: 0 auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     z-index: 10;
     position: inherit;
   }
-
-
 
   .animation_left {
     position: inherit;
@@ -174,7 +172,7 @@
   .animation_right {
     position: inherit;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .main_button_more {
@@ -186,8 +184,11 @@
 }
 
 @media all and (max-width: 550px) {
+  .main_wrapper {
+    background-image: url('./../../images/mainBgSmall.png');
+  }
   .animation_top {
-    margin-top: 2vh;
+    margin-top: 4vh;
   }
   .animation_left {
     font-size: 6vw;
@@ -200,34 +201,51 @@
   }
 
   .main_button_more {
-    width: 40vw;
-    font-size: 6vw;
+    width: 35vw;
+    height: 13vw;
+    font-size: 5vw;
+    margin-top: 20px;
   }
 
   .main_wrapper {
-    margin-top: 50%;
-    height: 45vh;
+    margin-top: 20vh;
   }
 
   .main {
-    height: 80vh;
+    height: 65vh;
   }
 }
 
-@media all and (max-width: 415px) {
-  .main_wrapper {
-    margin-top: 60%;
+
+@media all and (max-height: 916px) {
+  .main {
+    margin-top: 15vh;
   }
 }
 
-@media all and (max-width: 376px) {
-  .main_wrapper {
-    margin-top: 45%;
+@media all and (min-height: 926px) {
+  .main {
+    margin-top: 16.6vh;
   }
 }
 
-@media all and (max-width: 361px) {
-  .main_wrapper {
-    margin-top: 55%;
+@media all and (max-height: 800px) {
+  .animation_top {
+    margin-top: 2vh;
+  }
+  .animation_left {
+    
+    margin-top: 2vh;
+  }
+
+  .animation_right {
+    margin-top: 2vh;
+  }
+
+  .main_button_more {
+    margin-top: 4vh;
+  
   }
 }
+
+

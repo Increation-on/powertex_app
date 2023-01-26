@@ -26,14 +26,14 @@ img {
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-@media all and (max-width: 853px) {
+@media all and (max-width: 859px) {
     img {
         width: 115%;
         height: 17vh;
     }
     .logo_wrapper {
         margin-left: 0px;
-        margin-top: 6%;
+        margin-top: 2%;
     }
 }
 
