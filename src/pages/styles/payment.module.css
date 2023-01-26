@@ -43,7 +43,7 @@ p {
 
 @media all and (max-width: 853px) {
     .payment_wrapper {
-        margin-top: 17vh;
+        margin-top: 15vh;
     }
 }
 
@@ -53,8 +53,8 @@ p {
         font-size: 40px;
     }
 
-    p {
-        font-size: 26px;
+   .payment p {
+        font-size: 4.2vw;
     }
 
     .payment_bg {
@@ -75,8 +75,8 @@ p {
         font-size: 8vw;
     }
 
-    p {
-        font-size: 5.7vw;
+    .payment p {
+        font-size: 4.8vw;
     }
 }
 
@@ -85,4 +85,21 @@ p {
      .payment_wrapper {
         height: 60vh;
     }
-} 
+    .payment p {
+        font-size: 5.2vw;
+    }
+}
+
+@media only screen and (min-height : 915px){
+    .payment_wrapper {
+        margin-top: 18vh;
+        height: 45vh;
+    }
+}
+
+@media only screen and (min-height : 896px){
+    .payment_wrapper {
+        margin-top: 17vh;
+        height: 45vh;
+    }
+}

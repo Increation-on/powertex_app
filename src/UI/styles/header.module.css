@@ -21,6 +21,7 @@
     font-weight: bold;
     text-decoration: none;
     color: #53524f;
+    text-align: center;
 }
 
 .menu_item:hover {
@@ -34,6 +35,10 @@
     text-decoration: none;
     color: #fd3400;
     cursor: default;
+}
+
+.menu_item_active:hover {
+   border-bottom: 0px;
 }
 
 .telephone_wrapper {
@@ -107,6 +112,10 @@
         font-size: 20px;
     }
 
+    .menu_item_active {
+        margin-left: 7px;
+    }
+
     .telephone_numbers {
         font-size: 18px;
     }
@@ -119,7 +128,6 @@
         height: 35vh;
         padding-bottom: 3px;
     }
-
     .telephone_wrapper {
         margin-top: 15px;
         margin-left: 10px;

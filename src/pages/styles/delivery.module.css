@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-p {
+.delivery p {
     margin-top: 30px;
     text-align: left;
     color: #53524f;
@@ -53,10 +53,14 @@ span {
     }
 }
 
-@media all and (max-width: 853px) {
+@media all and (max-width: 859px) {
     .delivery_wrapper {
-        margin-top: 17vh;
-        height: 70vh;
+        margin-top: 15vh;
+        height: 80vh;
+    }
+
+    .delivery p {
+        font-size: 4.1vw;
     }
 }
 
@@ -66,13 +70,10 @@ span {
         font-size: 40px;
     }
 
-    p {
-        font-size: 26px;
-    }
-
     .delivey_bg {
         height: 70%;
     }
+
     .delivery_wrapper {
         height: 60vh;
     }
@@ -85,20 +86,36 @@ span {
         height: 70%;
         width: 95%;
     }
+
     .delivery_header {
         font-size: 8vw;
     }
 
-    p {
-        font-size: 5.7vw;
+    .delivery p {
+        font-size: 4.7vw;
     }
 }
 
 @media all and (max-width: 380px) {
     .delivey_wrapper {
-       height: 50vh;
-   }
-} 
+        height: 50vh;
+    }
 
+    .delivery p {
+        font-size: 5vw;
+    }
+}
+@media only screen and (min-height : 916px){
+    .delivery_wrapper {
+        margin-top: 18vh;
+        height: 45vh;
+    }
+}
 
+@media only screen and (min-height : 896px){
+    .delivery_wrapper {
+        margin-top: 17vh; 
+        height: 45vh;
+    }
+}
 

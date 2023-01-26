@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles/product.module.css';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import DOMPurify from 'dompurify';
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -26,6 +27,7 @@ const Product = () => {
   }, []);
 
 
+
   return detailedProducts ? (
     <div className={styles.product_main}>
       <div className={styles.product_wrapper}>
@@ -46,8 +48,7 @@ const Product = () => {
                     <div className={styles.product_description_title}>
                       <h1>{descr.title}</h1>
                     </div>
-                    {/* DOMPURIFY */}
-                    <p className={styles.product_description} dangerouslySetInnerHTML={{ __html: descr.text }}></p>
+                    <p className={styles.product_description} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(descr.text) }}></p>
                   </div>
                 )
               })}
@@ -60,14 +61,13 @@ const Product = () => {
                     <div className={styles.applicate_description} key={item.id}>
                       <h1>{item.title}</h1>
                       <img src={item.img} alt="a1" />
-                      {/* DOMPURIFY */}
-                      <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
+                      <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.description) }}></p>
                     </div>
                   )
                 })}
               </div>
             </TabPanel>
-            
+
             <TabPanel>
               <div className={styles.specifications_wrapper}>
                 <h1>{detailedProducts[productID].specifications.title}</h1>
@@ -75,9 +75,8 @@ const Product = () => {
                   {detailedProducts[productID].specifications.features.map(item => {
                     return (
                       <div className={styles.specifications_table_row} key={item.id}>
-                        {/* DOMPURIFY */}
-                        <span dangerouslySetInnerHTML={{ __html: item.feature }}></span>
-                        <span dangerouslySetInnerHTML={{ __html: item.value }}></span>
+                        <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.feature) }}></span>
+                        <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.value) }}></span>
                       </div>
                     )
                   })}
@@ -88,7 +87,7 @@ const Product = () => {
         </div>
       </div>
     </div>
-  ) : <Loader/>
+  ) : <Loader />
 }
 
 export default Product;

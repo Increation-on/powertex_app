@@ -198,13 +198,13 @@
     }
 
     .applicate_description h1 {
-        font-size: 8vw;
+        font-size: 8.5vw;
     }
     
     .applicate_description p {
         text-indent: 0px;
         font-size: 6vw;
-        text-align: center;
+        text-align: left;
     }
     
     .applicate_description img {
