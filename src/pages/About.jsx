@@ -6,11 +6,20 @@ const About = () => {
       <div className={styles.about_wrapper}>
 
         <div className={styles.about_description}>
-          <h1>Raidics</h1>
+          {/* <h1>Raidics</h1> */}
           <div className={styles.about_description_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />Etiam luctus eleifend nibh ac posuere.
-            <br />Sed consequat dictum libero, in condimentum felis lobortis vitae. Vivamus commodo turpis suscipit, feugiat odio ac, ullamcorper diam. Sed quis quam in dui volutpat congue. Donec eleifend, tellus et pretium finibus, mauris lacus posuere lectus, nec venenatis erat erat vel mauris. In imperdiet, tellus sed porttitor dapibus, dolor mauris luctus lectus, hendrerit aliquet metus orci et libero. Phasellus quis felis sit amet lorem imperdiet lacinia vel ac enim. Nam varius augue vel tellus blandit, ut vehicula mauris fringilla.
+            <b>Раидикс или Повертекс????</b> - молодая, быстроразвивающаяся
+            компания, основанная в 2022 году
+            с целью предоставления высококачественных
+            гидро-пароизоляционных материалов для внутренней
+            и наружной отделки. Наша продукция включает в себя
+            теплоизоляционные материалы, гидроизоляционные материалы,
+            и паро-гидроизоляционные материалы.
+            Мы стремимся предоставить нашим клиентам наилучшее качество продукции и услуг, а также
+            предлагаем конкурентные цены. Наши продукты прошли строгие испытания и получили сертификаты
+            качества. Наши клиенты приобретают наши продукты и услуги для достижения лучших результатов и
+            отличной энергоэффективности. Наши клиенты дают
+            нам положительные отзывы о нашей продукции и услугах.
           </div>
         </div>
 

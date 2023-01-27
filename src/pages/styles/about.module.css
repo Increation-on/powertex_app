@@ -10,11 +10,13 @@
 }
 
 .about_description {
+    margin-top: 10px;
     width: 30%;
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 22px;
     color: #53524f;
+    text-indent: 30px;
     padding-left: 15px;
     padding-right: 10px;
 }
