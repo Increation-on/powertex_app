@@ -1,8 +1,8 @@
 [
     {
-        "title": "О компании",
+        "title": "Продукция",
         "id": 1,
-        "path": "/about"
+        "path": "/products"
     },
     {
         "title": "Оплата",
@@ -15,8 +15,8 @@
         "path": "/delivery"
     },
     {
-        "title": "Продукция",
+        "title": "О компании",
         "id": 4,
-        "path": "/products"
+        "path": "/about"
     }
 ]

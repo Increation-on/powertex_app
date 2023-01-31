@@ -184,6 +184,9 @@
         padding-bottom: 30px;
         width: 80%;
     }
+    .specifications_wrapper h1 {
+        display: none;
+    }
 }
 
 @media all and (max-width: 550px) {
@@ -221,8 +224,6 @@
         font-size: 5vw;
     }
 }
-
-
 
 
 @media all and (max-width: 415px) {
