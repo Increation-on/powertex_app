@@ -169,7 +169,7 @@
 
 @keyframes slidebottom_viewport {
   from {
-    top: 40vh;
+    top: 60vh;
   }
 
   to {
@@ -223,7 +223,7 @@
     margin: 0 auto;
     top: 12vh;
     left: 0;
-    animation-duration: 1.7s;
+    animation-duration: 3s;
     animation-name: slidebottom_viewport;
   }
 
