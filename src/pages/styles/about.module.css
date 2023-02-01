@@ -132,7 +132,7 @@
 
 @media all and (max-width: 859px) {
     .main_about {
-        margin-top: 20vh;
+        margin-top: 35vh;
     }
 
     .about_description p {
@@ -150,7 +150,7 @@
     }
 
     .main_about {
-        margin-top: 15vh;
+        margin-top: 36vh;
     }
 
     .about_description {

@@ -55,7 +55,7 @@ span {
 
 @media all and (max-width: 859px) {
     .delivery_wrapper {
-        margin-top: 15vh;
+        margin-top: 35vh;
         height: 80vh;
     }
 
@@ -97,25 +97,13 @@ span {
 }
 
 @media all and (max-width: 380px) {
-    .delivey_wrapper {
-        height: 50vh;
+    .delivery_wrapper {
+        height: 60vh;
     }
 
     .delivery p {
         font-size: 5vw;
     }
 }
-@media only screen and (min-height : 916px){
-    .delivery_wrapper {
-        margin-top: 18vh;
-        height: 45vh;
-    }
-}
 
-@media only screen and (min-height : 896px){
-    .delivery_wrapper {
-        margin-top: 17vh; 
-        height: 45vh;
-    }
-}
 

@@ -13,6 +13,7 @@ const NamesById = {
     5: "Powertex M90",
     6: "Powertex M110",
     7: "Powertex M140",
+    8: "Powertex S",
 };
 
 export const DynamicBreadcrumb = ({ match }) => {

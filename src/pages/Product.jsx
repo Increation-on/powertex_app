@@ -59,7 +59,7 @@ const Product = () => {
                 {detailedProducts[productID].applicate.map(item => {
                   return (
                     <div className={styles.applicate_description} key={item.id}>
-                      <h1>{item.title}</h1>
+                      <h1 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.title)}}></h1>
                       <img src={item.img} alt="a1" />
                       <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.description) }}></p>
                     </div>

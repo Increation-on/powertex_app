@@ -27,6 +27,7 @@ img {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media all and (max-width: 859px) {
+    /* FIX IT */
     img {
         width: 115%;
         height: 17vh;

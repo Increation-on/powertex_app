@@ -7,9 +7,9 @@ const About = () => {
 
         <div className={styles.about_description}>
           <p>
-            На&shy;ша ком&shy;па&shy;ния бы&shy;ла ос&shy;но&shy;ва&shy;на в 2016 го&shy;ду и за это вре&shy;мя
-            про&shy;де&shy;мон&shy;стри&shy;ро&shy;ва&shy;ла се&shy;бя, как ди&shy;на&shy;мич&shy;но раз&shy;ви&shy;ва&shy;ю&shy;щу&shy;ю&shy;ся, а так&shy;же
-            на&shy;деж&shy;но&shy;го по&shy;став&shy;щи&shy;ка и вы&shy;год&shy;но&shy;го парт&shy;не&shy;ра. Ре&shy;а&shy;ли&shy;зу&shy;е&shy;мая на&shy;ми про&shy;дук&shy;ция вклю&shy;ча&shy;ет в се&shy;бя
+            Наш брэнд был ос&shy;но&shy;ван в 2016 го&shy;ду и за это вре&shy;мя
+            про&shy;де&shy;мон&shy;стри&shy;ро&shy;вал се&shy;бя, как ди&shy;на&shy;мич&shy;но раз&shy;ви&shy;ва&shy;ю&shy;щий&shy;&shy;ся, а так&shy;же
+            на&shy;деж&shy;ным по&shy;став&shy;щи&shy;ком и вы&shy;год&shy;ным парт&shy;не&shy;ром. Ре&shy;а&shy;ли&shy;зу&shy;е&shy;мая на&shy;ми про&shy;дук&shy;ция вклю&shy;ча&shy;ет в се&shy;бя
             теп&shy;ло&shy;изо&shy;ля&shy;ци&shy;он&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы, гид&shy;ро&shy;изо&shy;ля&shy;ци&shy;он&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы,
             и па&shy;ро-гид&shy;ро&shy;изо&shy;ля&shy;ци&shy;он&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы для внут&shy;рен&shy;ней и на&shy;руж&shy;ной от&shy;дел&shy;ки.
             Мы стре&shy;мим&shy;ся предо&shy;ста&shy;вить на&shy;шим кли&shy;ен&shy;там наи&shy;луч&shy;шее ка&shy;че&shy;ство про&shy;дук&shy;ции и услуг, а так&shy;же

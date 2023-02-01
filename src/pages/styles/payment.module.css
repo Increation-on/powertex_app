@@ -41,9 +41,9 @@ p {
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 !!!!!!!!!!!!!!!!!!!!!! */
 
-@media all and (max-width: 853px) {
+@media all and (max-width: 859px) {
     .payment_wrapper {
-        margin-top: 15vh;
+        margin-top: 35vh;
     }
 }
 
@@ -90,16 +90,10 @@ p {
     }
 }
 
-@media only screen and (min-height : 915px){
+/* @media only screen and (min-height : 915px){
     .payment_wrapper {
         margin-top: 18vh;
         height: 45vh;
     }
 }
-
-@media only screen and (min-height : 896px){
-    .payment_wrapper {
-        margin-top: 17vh;
-        height: 45vh;
-    }
-}
+ */

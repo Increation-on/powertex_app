@@ -5,6 +5,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .main_wrapper {
@@ -20,8 +21,8 @@
   background-size: 100% 100%;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 400px;
-  height: 80px;
+  width: 450px;
+  height: 90px;
   top: 8%;
   margin: auto;
   animation-duration: 1.2s;
@@ -34,7 +35,7 @@
   display: flex;
   align-items: center;
   color: white;
-  font-size: 34px;
+  font-size: 38px;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
   width: 400px;
@@ -55,7 +56,7 @@
   display: flex;
   align-items: center;
   color: white;
-  font-size: 34px;
+  font-size: 38px;
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
   width: 400px;
@@ -143,6 +144,39 @@
   }
 }
 
+
+/* Keyframes fro media!!! */
+
+@keyframes slideleft_viewport {
+  from {
+    right: 100vw;
+  }
+
+  to {
+    right: 10vw;
+  }
+}
+
+@keyframes slideright_viewport {
+  from {
+    left: 100vw;
+  }
+
+  to {
+    right: -10vw;
+  }
+}
+
+@keyframes slidebottom_viewport {
+  from {
+    top: 40vh;
+  }
+
+  to {
+    top: 12vh;
+  }
+}
+
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -153,32 +187,44 @@
     flex-direction: column;
     justify-content: flex-start;
   }
+  .main {
+    margin-top: 35vh;
+    height: 60vh;
+  }
 
   .animation_top {
     width: 45%;
     height: 8vh;
     margin: 0 auto;
-    margin-top: 20vh;
-    z-index: 10;
+    margin-top: 3vh;
     position: inherit;
   }
 
   .animation_left {
-    position: inherit;
+    /* position: inherit; */
     margin: 0 auto;
-    margin-top: 50px;
+    top: 2.5vh;
+    right: 10vw;
+    animation-name: slideleft_viewport;
+    animation-duration: 1.8s;
   }
 
   .animation_right {
-    position: inherit;
+    /* position: inherit; */
     margin: 0 auto;
-    margin-top: 30px;
+    left: 10vw;
+    top: 4vh;
+    animation-name: slideright_viewport;
+    animation-duration: 2s;
   }
 
   .main_button_more {
-    position: inherit;
+    /* position: inherit; */
     margin: 0 auto;
-    margin-top: 14vw;
+    top: 12vh;
+    left: 0;
+    animation-duration: 1.7s;
+    animation-name: slidebottom_viewport;
   }
 
 }
@@ -188,64 +234,36 @@
     background-image: url('./../../images/mainBgSmall.png');
   }
   .animation_top {
-    margin-top: 4vh;
+    margin-top: 3vh;
   }
   .animation_left {
-    font-size: 6vw;
-    width: 65vw;
+    font-size: 6.5vw;
+    width: 70vw;
   }
 
   .animation_right {
-    font-size: 6vw;
-    width: 65vw;
+    font-size: 6.5vw;
+    width: 70vw;
   }
 
   .main_button_more {
-    width: 35vw;
-    height: 13vw;
+    width: 30vw;
+    height: 14vw;
     font-size: 5vw;
-    margin-top: 20px;
+    /* margin-top: 10vh; */
   }
-
-  .main_wrapper {
-    margin-top: 20vh;
-  }
-
   .main {
-    height: 65vh;
+    height: 50vh;
   }
 }
 
-
-@media all and (max-height: 916px) {
-  .main {
-    margin-top: 15vh;
-  }
+/* @media only screen and (min-height : 915px){
+    .payment_wrapper {
+        margin-top: 18vh;
+        height: 45vh;
+    }
 }
+ */
 
-@media all and (min-height: 926px) {
-  .main {
-    margin-top: 16.6vh;
-  }
-}
-
-@media all and (max-height: 800px) {
-  .animation_top {
-    margin-top: 2vh;
-  }
-  .animation_left {
-    
-    margin-top: 2vh;
-  }
-
-  .animation_right {
-    margin-top: 2vh;
-  }
-
-  .main_button_more {
-    margin-top: 4vh;
-  
-  }
-}
 
 
