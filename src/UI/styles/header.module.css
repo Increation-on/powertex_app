@@ -204,7 +204,13 @@
 
     .telephone_numbers {
         margin-top: 1vh;
-        font-size: 1.5vw;
+        font-size: 2.3vw;
+        width: 25vw;
+    }
+
+    .telephone_icon {
+        width: 20px;
+        height: 20px;
     }
 
     .viewport_container {
@@ -216,6 +222,7 @@
         width: 30vw;
         margin-top: 0;
         margin-right: 2vw;
+
     }
 
     .menu_container {
