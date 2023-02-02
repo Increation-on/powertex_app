@@ -68,7 +68,7 @@
     }
 
     .preview_card {
-        height: 60vh;
+        height: 80vh;
     }
 }
 
@@ -92,8 +92,8 @@
     .preview_card {
         margin: 0 auto;
         margin-bottom: 20px;
-        width: 80%;
-        height: 95vh;
+        width: 65vw;
+        height: 90vh;
     }
 }
 
@@ -103,9 +103,10 @@
     }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 412px) {
     .preview_card {
         height: 60vh;
+        width: 90vw;
     }
 }
 
@@ -126,22 +127,9 @@
     }
 }
 
-@media all and (min-height: 915px) {
+
+@media only screen and (max-height : 666px){
     .main_products {
-        margin-top: 20vh;
-    }
-
-    .preview_card {
-        height: 50vh;
-    }
-}
-
-@media all and (min-height: 851px) {
-    .main_products {
-        margin-top: 20vh;
-    }
-
-    .preview_card {
-        height: 45vh;
+        margin-top: 25vh;
     }
 }

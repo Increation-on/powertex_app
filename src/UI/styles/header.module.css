@@ -14,7 +14,7 @@
 .menu_container {
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
 .menu_item {
@@ -174,3 +174,27 @@
         margin-left: 2px;
     }
 }
+
+@media only screen and (max-height : 666px){
+    .header {
+        flex-direction: row;
+        /* justify-content: space-around; */
+        height: 25vh;
+        padding-bottom: 3px;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .menu_item {
+        margin-left: 5px;
+        font-size: 2vw;
+    }
+
+    .telephone_numbers {
+        font-size: 2vw;
+    }
+}
+
+

@@ -145,7 +145,7 @@
 }
 
 
-/* Keyframes fro media!!! */
+/* Keyframes fro media (width)!!! */
 
 @keyframes slideleft_viewport {
   from {
@@ -169,11 +169,63 @@
 
 @keyframes slidebottom_viewport {
   from {
-    top: 60vh;
+    top: 50vh;
   }
 
   to {
     top: 12vh;
+  }
+}
+
+@keyframes slidetop_viewport {
+  from {
+    top: -15vh;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+/* Keyframes fro media (height)!!! */
+
+@keyframes slideleft_viewport {
+  from {
+    right: 100vw;
+  }
+
+  to {
+    right: 10vw;
+  }
+}
+
+@keyframes slideright_viewport {
+  from {
+    left: 100vw;
+  }
+
+  to {
+    right: -10vw;
+  }
+}
+
+@keyframes slidebottom_viewport_height {
+  from {
+    top: 50vh;
+  }
+
+  to {
+    top: 17vh;
+  }
+}
+
+@keyframes slidetop_viewport {
+  from {
+    top: -15vh;
+  }
+
+  to {
+    top: 0;
   }
 }
 
@@ -187,6 +239,7 @@
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .main {
     margin-top: 35vh;
     height: 60vh;
@@ -197,11 +250,11 @@
     height: 8vh;
     margin: 0 auto;
     margin-top: 3vh;
-    position: inherit;
+    top: 0;
+    animation-name: slidetop_viewport;
   }
 
   .animation_left {
-    /* position: inherit; */
     margin: 0 auto;
     top: 2.5vh;
     right: 10vw;
@@ -210,7 +263,6 @@
   }
 
   .animation_right {
-    /* position: inherit; */
     margin: 0 auto;
     left: 10vw;
     top: 4vh;
@@ -219,11 +271,10 @@
   }
 
   .main_button_more {
-    /* position: inherit; */
     margin: 0 auto;
     top: 12vh;
     left: 0;
-    animation-duration: 3s;
+    animation-duration: 2.3s;
     animation-name: slidebottom_viewport;
   }
 
@@ -233,9 +284,11 @@
   .main_wrapper {
     background-image: url('./../../images/mainBgSmall.png');
   }
+
   .animation_top {
     margin-top: 3vh;
   }
+
   .animation_left {
     font-size: 6.5vw;
     width: 70vw;
@@ -250,20 +303,47 @@
     width: 30vw;
     height: 14vw;
     font-size: 5vw;
-    /* margin-top: 10vh; */
   }
+
   .main {
     height: 50vh;
   }
 }
 
-/* @media only screen and (min-height : 915px){
-    .payment_wrapper {
-        margin-top: 18vh;
-        height: 45vh;
-    }
+@media only screen and (max-height : 415px) {
+  .main {
+    margin-top: 25vh;
+  }
+  .animation_top {
+    width: 45%;
+    height: 16vh;
+    margin: 0 auto;
+    margin-top: 7vh;
+    top: 0;
+    animation-name: slidetop_viewport;
+  }
+
+  .animation_left {
+    margin: 0 auto;
+    top: 5vh;
+    right: 10vw;
+    animation-name: slideleft_viewport;
+    animation-duration: 1.8s;
+  }
+
+  .animation_right {
+    margin: 0 auto;
+    left: 10vw;
+    top: 7vh;
+    animation-name: slideright_viewport;
+    animation-duration: 2s;
+  }
+
+  .main_button_more {
+    margin: 0 auto;
+    top: 17vh;
+    left: 0;
+    animation-duration: 2.3s;
+    animation-name: slidebottom_viewport_height;
+  }
 }
- */
-
-
-
