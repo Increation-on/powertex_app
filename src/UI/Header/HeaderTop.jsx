@@ -20,16 +20,18 @@ const HeaderTop = () => {
     return (
         <header className={styles.header}>
             <Logo />
-            <Phones />
-            <ul className={styles.menu_container}>
-                {menu && menu.map(el => {
-                    return (
-                        <li key={el.id} className={styles.menu_item}>
-                            <NavLink className={({ isActive }) => isActive ? styles.menu_item_active : styles.menu_item} to={el.path}>{el.title}</NavLink>
-                        </li>
-                    )
-                })}
-            </ul>
+            <div className={styles.viewport_container}>
+                <Phones />
+                <ul className={styles.menu_container}>
+                    {menu && menu.map(el => {
+                        return (
+                            <li key={el.id} className={styles.menu_item}>
+                                <NavLink className={({ isActive }) => isActive ? styles.menu_item_active : styles.menu_item} to={el.path}>{el.title}</NavLink>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
         </header>
     )
 }

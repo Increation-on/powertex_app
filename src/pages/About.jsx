@@ -57,7 +57,7 @@ const About = () => {
           </div>
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A463b39930642139ae58f9a550f6d7d0fa27e283437ca2379ada8a113b73e05f2&amp;source=constructor"
-            width="500" height="600" frameborder="0">
+            width="500" height="600">
           </iframe>
         </div>
 

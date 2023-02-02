@@ -310,7 +310,7 @@
   }
 }
 
-@media only screen and (max-height : 415px) {
+@media only screen and (max-height : 455px) {
   .main {
     margin-top: 25vh;
   }

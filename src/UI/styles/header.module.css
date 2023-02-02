@@ -7,14 +7,25 @@
     justify-content: space-between;
     z-index: 100;
     background-color: #ebecec;
-    
     overflow: hidden;
+}
+
+.viewport_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .menu_container {
     display: flex;
     flex-direction: row;
-    margin-right: 20px; 
+    justify-content: end;
+    margin-right: 20px;
+    height: 100%;
+    align-items: center;
 }
 
 .menu_item {
@@ -40,16 +51,16 @@
 }
 
 .menu_item_active:hover {
-   border-bottom: 0px;
+    border-bottom: 0px;
 }
 
 .telephone_wrapper {
-    margin-left: 70px;
     font-weight: 500;
     display: flex;
     align-items: center;
     color: #53524f;
     cursor: default;
+    height: 100%;
 }
 
 .telephone_icon {
@@ -108,7 +119,7 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
-@media all and (max-width: 987px) {
+@media all and (max-width: 998px) {
     .menu_item {
         margin-left: 7px;
         font-size: 20px;
@@ -130,31 +141,39 @@
         height: 35vh;
         padding-bottom: 3px;
     }
+
+    .viewport_container {
+        flex-direction: column;
+        width: auto;
+    }
+
     .telephone_wrapper {
         margin-top: 15px;
-        margin-left: 10px;
     }
 
     .menu_container {
-        margin-top: 15px;
+        justify-content: space-between;
+        margin-right: 0;
     }
+
+    .menu_item {
+        margin-left: 0;
+    }
+
+    .menu_item:not(:first-child) {
+        margin-left: 7px;
+    }
+
+
+
     .breadcrumbs {
         display: none;
     }
 }
 
-@media all and (max-width: 457px) {
-    .menu_item {
-        margin-left: 7px;
-        font-size: 17px;
-    }
-
-}
-
 
 @media all and (max-width: 401px) {
     .menu_item {
-        margin-left: 5px;
         font-size: 4vw;
     }
 
@@ -175,12 +194,46 @@
     }
 }
 
-@media only screen and (max-height : 666px){
+@media only screen and (max-height : 455px) and (max-width: 859px) {
     .header {
         flex-direction: row;
-        /* justify-content: space-around; */
         height: 25vh;
-        padding-bottom: 3px;
+        padding-bottom: 5px;
+        justify-content: space-between;
+    }
+
+    .telephone_numbers {
+        margin-top: 1vh;
+        font-size: 1.5vw;
+    }
+
+    .viewport_container {
+        flex-direction: row;
+        margin-right: 10px;
+    }
+
+    .telephone_wrapper {
+        width: 30vw;
+        margin-top: 0;
+        margin-right: 2vw;
+    }
+
+    .menu_container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .menu_item {
+        margin-left: 0;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-height : 380px) and (max-width: 700px) {
+    .header {
+        flex-direction: row;
+        height: 25vh;
+        padding-bottom: 5px;
     }
 
     .breadcrumbs {
@@ -193,8 +246,27 @@
     }
 
     .telephone_numbers {
-        font-size: 2vw;
+        margin-top: 1vh;
+        font-size: 2.5vw;
+    }
+
+    .viewport_container {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .telephone_wrapper {
+        margin-top: 0;
+    }
+
+    .menu_container {
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .menu_item {
+        margin-left: 0;
+        font-size: 2.8vw;
     }
 }
-
-
