@@ -247,7 +247,7 @@
 
   .animation_top {
     width: 45%;
-    height: 8vh;
+    height: 10vh;
     margin: 0 auto;
     margin-top: 3vh;
     top: 0;
@@ -283,9 +283,11 @@
 @media all and (max-width: 550px) {
   .main_wrapper {
     background-image: url('./../../images/mainBgSmall.png');
+    background-size: 150vw 100%;
   }
 
   .animation_top {
+    height: 8vh;
     margin-top: 3vh;
   }
 

@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    height: 500px;
     border: 0.3px solid #ebecec;
     border-radius: 8px;
     background-size: 100% 100%;
@@ -26,6 +25,7 @@
     transition: background-size .4s ease-in;
     -moz-transition: background-size .4s ease-in;
     -web-kit-transition: background-size .4s ease-in;
+     height: 500px;
 }
 
 
@@ -64,20 +64,15 @@
 @media all and (max-width: 1250px) {
     .products_wrapper {
         grid-template-columns: repeat(3, 27vw);
-        gap: 40px;
+        gap: 20px;
     }
 
     .preview_card {
-        height: 80vh;
+        height: 90vh;
     }
 }
 
 @media all and (max-width: 1050px) {
-    .products_wrapper {
-        grid-template-columns: repeat(3, 27vw);
-        gap: 40px;
-    }
-
     .preview_card {
         height: 50vh;
     }
@@ -85,31 +80,33 @@
 
 @media all and (max-width: 859px) {
     .main_products {
-        margin-top: 38vh;
+        margin-top: 35vh;
     }
 
     .products_wrapper {
-        grid-template-columns: repeat(3, 27vw);
-        gap: 0px;
+        grid-template-columns: repeat(2, 50vw);
+        gap: 10px;
         justify-content: space-evenly;
     }
+    .preview_card {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 40vw;
+        height: 20vh;
+    }
+}
 
-    .products_wrapper {
+@media all and (max-width: 530px) {
+
+     .products_wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    .preview_card {
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 65vw;
-        height: 90vh;
-    }
-}
 
-@media all and (max-width: 530px) {
     .preview_card {
+        width: 90vw;
         height: 70vh;
     }
 }
@@ -117,7 +114,6 @@
 @media all and (max-width: 412px) {
     .preview_card {
         height: 60vh;
-        width: 90vw;
     }
 }
 
@@ -138,22 +134,6 @@
     }
 }
 
-@media only screen and (max-height : 900px){
-    .preview_card {
-        height: 50vh;
-    }
-    .description {
-        font-size: 2vh;
-    }
-}
-
-@media only screen and (max-height : 666px){
-    .main_products {
-        margin-top: 25vh;
-    }
-}
-
-
 
 @media only screen and (max-height : 415px){
     .preview_card {
@@ -165,11 +145,14 @@
 }
 
 @media only screen and (max-height : 391px){
+    .products_wrapper {
+        grid-template-columns: repeat(2, 40vw);
+    }
     .preview_card {
-        height: 100vh;
-        width: 55vw;
+        height: 70vh;
+        width: 35vw;
     }
     .description {
-        font-size: 2.5vw;
+        font-size: 3vh;
     }
 }

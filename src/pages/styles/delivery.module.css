@@ -46,7 +46,7 @@ span {
 !!!!!!!!1111111!!!!!!!!!!*/
 
 
-@media all and (min-height: 915px) {
+@media all and (max-height: 915px) {
     .delivery_bg {
         height: 70%;
         width: 95%;
@@ -105,5 +105,16 @@ span {
         font-size: 5vw;
     }
 }
+
+@media only screen and (max-height : 470px){
+    .delivery_header {
+       font-size: 3vw;
+    }
+    .delivery p {
+        font-size: 4.5vh;
+    }
+}
+
+
 
 
