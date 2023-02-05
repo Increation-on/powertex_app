@@ -37,11 +37,6 @@
     text-align: center;
 }
 
-.menu_item:hover {
-    color: #fd3400;
-    transition: .2s ease-in;
-}
-
 .menu_item_active {
     margin-left: 12px;
     font-weight: bold;
@@ -50,9 +45,11 @@
     cursor: default;
 }
 
-.menu_item_active:hover {
-    border-bottom: 0px;
+.menu_item:hover {
+    color: #fd3400;
+    transition: .2s ease-in;
 }
+
 
 .telephone_wrapper {
     font-weight: 500;
@@ -142,6 +139,8 @@
         padding-bottom: 3px;
     }
 
+
+
     .viewport_container {
         flex-direction: column;
         width: auto;
@@ -156,12 +155,8 @@
         margin-right: 0;
     }
 
-    .menu_item {
-        margin-left: 0;
-    }
-
     .menu_item:not(:first-child) {
-        margin-left: 7px;
+        margin-left: 1vw;
     }
 
 
