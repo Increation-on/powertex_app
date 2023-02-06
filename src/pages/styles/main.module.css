@@ -349,3 +349,32 @@
     animation-name: slidebottom_viewport_height;
   }
 }
+
+@media only screen and (max-height : 400px) {
+  .animation_top {
+    width: 35%;
+    height: 16vh;
+    margin: 0 auto;
+    margin-top: 7vh;
+    top: 0;
+    animation-name: slidetop_viewport;
+  }
+
+  .animation_left {
+    margin: 0 auto;
+    top: 5vh;
+    right: 10vw;
+    font-size: 8vh;
+  }
+
+  .animation_right {
+    margin: 0 auto;
+    left: 10vw;
+    top: 5vh;
+    font-size: 8vh;
+  }
+
+  .main_button_more {
+    display: none;
+  }
+}

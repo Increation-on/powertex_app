@@ -1,8 +1,10 @@
 .payment_wrapper {
     flex: 1 0 auto;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .payment_bg {
@@ -22,7 +24,7 @@
 
 .payment_header {
     color: #53524f;
-    font-size: 50px;
+    font-size: 6vw;
     font-weight: 500;
     margin-top: 20px;
     text-align: center;
@@ -41,14 +43,22 @@ p {
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 !!!!!!!!!!!!!!!!!!!!!! */
 
-@media all and (max-width: 859px) {
+@media only screen and (max-width: 916px) and (min-height: 415px) {
     .payment_wrapper {
-        margin-top: 35vh;
+        margin-top: 0px;
     }
 }
 
-@media all and (max-width: 598px) {
+@media all and (max-width: 859px) {
+    .payment_wrapper {
+        margin-top: 35vh;
+        padding-bottom: 20px;
+    }
+}
 
+
+
+@media all and (max-width: 598px) {
     .payment_header {
         font-size: 40px;
     }
@@ -67,8 +77,12 @@ p {
 
 @media all and (max-width: 450px) {
     .payment_bg {
-        width: 100%;
-        height: 60vh;
+        width: 90%;
+        min-height: 60vh;
+    }
+
+    .payment_wrapper {
+        min-height: auto;
     }
 
     .payment_header {
@@ -82,19 +96,18 @@ p {
 
 
 @media all and (max-width: 380px) {
-     .payment_wrapper {
-        height: 60vh;
-    }
     .payment p {
-        font-size: 5.2vw;
+        font-size: auto;
     }
 }
 
-@media only screen and (max-height : 470px){
+@media only screen and (max-height: 415px) {
     .payment_header {
-       font-size: 3vw;
+        font-size: 5vw;
     }
+
     .payment p {
-        font-size: 4.5vh;
+        font-size: 3vw;
     }
+
 }

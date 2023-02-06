@@ -167,9 +167,9 @@
 }
 
 
-@media all and (max-width: 401px) {
+@media all and (max-width: 415px) {
     .menu_item {
-        font-size: 4vw;
+        font-size: 4.2vw;
     }
 
     .telephone_numbers {
