@@ -112,7 +112,7 @@ span {
 
 @media only screen and (max-height : 415px){
     .delivery_wrapper {
-        min-height: auto;
+        min-height: 100vh;
     }
     .delivery_bg {
         height: 100vh;
