@@ -12,13 +12,12 @@
 img {
     width: 115px;
     height: 95px;
-    bottom: 10px;
 }
 
 .logo_wrapper {
     position: relative;
     margin-left: 1.5vw;
-    bottom: 2px;
+    padding-bottom: 2px;
 }
 
 
@@ -28,48 +27,19 @@ img {
 
 @media all and (max-width: 859px) {
     img {
-        width: 100%;
+        width: 180px;
         height: 17vh;
     }
     .logo_wrapper {
         margin-left: 0px;
-        margin-top: 2vh;
-    }
-}
-
-@media all and (max-width: 550px) {
-    img {
-        width: 100;
+        margin-top: 2.5vh;
     }
 }
 
 @media only screen and (max-height : 455px) and (max-width: 859px) {
     img {
-        margin-left: 10px;
+        width: 120px;
+        margin-left: 20px;
     }
-}
-
-/* @media all and (max-width: 420px) {
-    img {
-        width: 42vw;
-    }
-} */
-
-/* @media all and (max-width: 376px) {
-    img {
-        width: 40vw;
-    }
-}
-
-@media all and (max-width: 286px) {
-    img {
-        width: 50vw;
-    }
-}
-
-@media only screen and (max-height : 550px) and (max-width: 859px) {
-    img {
-        width: 15vw;
-    }
-  } */
+} 
 
