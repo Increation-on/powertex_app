@@ -195,7 +195,7 @@
   }
 
   to {
-    right: 18vw;
+    right: 10vw;
   }
 }
 
@@ -363,7 +363,7 @@
   .animation_left {
     margin: 0 auto;
     top: 8vh;
-    right: 18vw;
+    right: 10vw;
     font-size: 8vh;
   }
 
