@@ -236,6 +236,7 @@
 @media all and (max-width: 415px) {
     .product_img {
         margin: 0 auto;
+        margin-top: 20px;
         width: 90%;
     }
 
@@ -248,6 +249,7 @@
 
     .product_description_short {
         margin: 0 auto;
+        margin-top: 12px;
         height: 100%;
         width: 85%;
     }
