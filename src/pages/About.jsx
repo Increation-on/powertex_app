@@ -9,7 +9,6 @@ const About = () => {
       left: 0,
       behavior: 'smooth',
     });
-    alert('top')
   }
 
 
