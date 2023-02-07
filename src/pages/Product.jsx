@@ -20,7 +20,7 @@ const Product = () => {
   const [detailedProducts, setDetailedProducts] = useState();
 
   useEffect(() => {
-    axios.get('/mocks/detailedProductNew.json').then(response => {
+    axios.get('/mocks/detailedProduct.json').then(response => {
       const data = response.data;
       setDetailedProducts(data);
     }).catch(err => console.log(err));
@@ -33,6 +33,7 @@ const Product = () => {
       <div className={styles.product_wrapper}>
         <h1 className={styles.product_title}>{detailedProducts[productID].title}</h1>
         <p className={styles.product_description_short}>{detailedProducts[productID].caption}</p>
+        <p className={styles.product_description_sizes} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].sizes) }}></p>
         <img src={detailedProducts[productID].img} alt="membrane" className={styles.product_img} />
         <div className={styles.product_tabs}>
           <Tabs disableUpDownKeys={true}>

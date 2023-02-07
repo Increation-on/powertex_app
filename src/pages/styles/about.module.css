@@ -77,6 +77,10 @@
     height: 100%;
 }
 
+.about_scroll_top_button {
+    /* display: none; */
+}
+
 
 /* MEDIA QUERY !!!!!!!!!!11111111111!!!!!!!!!!!!!!!!!!!!!!!!11111111111!
 !!!!!!!!!!!!!!1111111!!!!!!!!!!!!!!!! */
@@ -85,10 +89,6 @@
     .about_wrapper {
         flex-direction: column;
     }
-
-    /* .main_about {
-        margin-top: 36vh;
-    } */
 
     .about_description {
         width: 100%;
@@ -164,8 +164,24 @@
         margin: 0 auto;
         height: 65vh;
         width: 90vw;
-        margin-top: 15px;
-        padding-bottom: 10px;
+        margin-top: -45px;
+    }
+
+    .about_scroll_top_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: 55vh;
+        left: 80vw;
+        background-color: rgba(253, 52, 0, 0.5);
+        border-radius: 40px;
+        color: rgb(255, 240, 240);
+        z-index: 3;
+        font-size: 40px;
+        font-weight: bold;
     }
 }
 
@@ -181,6 +197,12 @@
 
     .about_address_description {
         padding-left: 10px;
+    }
+    .about_scroll_top_button {
+        left: 75vw;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
     }
 }
 
@@ -209,10 +231,26 @@
     .about_search {
         font-size: 6.7vw;
     }
+
+    .about_scroll_top_button {
+        left: 70vw;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (max-height : 670px){
+    .about_scroll_top_button {
+        top: 50vh;
+    }
 }
 
 @media only screen and (max-height : 415px){
     .main_about {
         margin-top: 25vh;
+    }
+    .about_scroll_top_button {
+        top: 45vh;
     }
 }

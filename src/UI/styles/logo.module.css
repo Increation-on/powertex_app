@@ -39,7 +39,11 @@ img {
 @media only screen and (max-height : 455px) and (max-width: 859px) {
     img {
         width: 120px;
+        height: 20vh;
         margin-left: 20px;
+    }
+    .logo_wrapper {
+        margin-top: 0.8vh;
     }
 } 
 

@@ -1,6 +1,18 @@
 import styles from '././styles/about.module.css';
 
+
 const About = () => {
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+    alert('top')
+  }
+
+
   return (
     <div className={styles.main_about}>
       <div className={styles.about_wrapper}>
@@ -55,10 +67,12 @@ const About = () => {
             </div>
             <div className={styles.about_search_column}>КАК НАС НАЙТИ ?</div>
           </div>
+          <button onClick={()=>{scrollTop()}} className={styles.about_scroll_top_button}>&#8593;</button> 
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A463b39930642139ae58f9a550f6d7d0fa27e283437ca2379ada8a113b73e05f2&amp;source=constructor"
             width="500" height="600">
           </iframe>
+        
         </div>
 
       </div>
