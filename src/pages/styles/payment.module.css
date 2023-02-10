@@ -12,19 +12,20 @@
     background-size: 100% 100%;
     margin: 0 auto;
     display: flex;
-    width: 75%;
-    height: 80%;
+    width: 90%;
+    height: 100vh;
 }
 
 .payment {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 60%;
 }
 
 .payment_header {
     color: #53524f;
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 500;
     margin-top: 20px;
     text-align: center;
@@ -35,8 +36,8 @@ p {
     margin-top: 30px;
     text-align: left;
     color: #53524f;
-    font-size: 34px;
-    width: 80vw;
+    font-size: 30px;
+    width: auto;
 }
 
 
@@ -72,6 +73,9 @@ p {
     }
     .payment_wrapper {
         height: 60vh;
+    }
+    .payment {
+        width: 100%;
     }
 }
 

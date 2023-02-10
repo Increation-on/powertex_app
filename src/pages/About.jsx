@@ -18,13 +18,12 @@ const About = () => {
 
         <div className={styles.about_description}>
           <p>
-            Наш брэнд был ос&shy;но&shy;ван в 2016 го&shy;ду и за это вре&shy;мя
-            про&shy;де&shy;мон&shy;стри&shy;ро&shy;вал се&shy;бя, как ди&shy;на&shy;мич&shy;но раз&shy;ви&shy;ва&shy;ю&shy;щий&shy;&shy;ся, а так&shy;же
-            на&shy;деж&shy;ным по&shy;став&shy;щи&shy;ком и вы&shy;год&shy;ным парт&shy;не&shy;ром. Ре&shy;а&shy;ли&shy;зу&shy;е&shy;мая на&shy;ми про&shy;дук&shy;ция вклю&shy;ча&shy;ет в се&shy;бя
+            Брэнд Powertex был ос&shy;но&shy;ван в 2016 го&shy;ду и за это вре&shy;мя
+            про&shy;де&shy;мон&shy;стри&shy;ро&shy;вал се&shy;бя, как ди&shy;на&shy;мич&shy;но раз&shy;ви&shy;ва&shy;ю&shy;щий&shy;&shy;ся. 
+            Ре&shy;а&shy;ли&shy;зу&shy;е&shy;мая на&shy;ми про&shy;дук&shy;ция вклю&shy;ча&shy;ет в се&shy;бя
             теп&shy;ло&shy;изо&shy;ля&shy;ци&shy;он&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы, гид&shy;ро&shy;изо&shy;ля&shy;ци&shy;он&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы,
             и па&shy;ро-гид&shy;ро&shy;изо&shy;ля&shy;ци&shy;он&shy;ные ма&shy;те&shy;ри&shy;а&shy;лы для внут&shy;рен&shy;ней и на&shy;руж&shy;ной от&shy;дел&shy;ки.
-            Мы стре&shy;мим&shy;ся предо&shy;ста&shy;вить на&shy;шим кли&shy;ен&shy;там наи&shy;луч&shy;шее ка&shy;че&shy;ство про&shy;дук&shy;ции и услуг, а так&shy;же
-            пред&shy;ла&shy;га&shy;ем кон&shy;ку&shy;рент&shy;ные це&shy;ны, а они, в свою оче&shy;редь, да&shy;ют нам по&shy;ло&shy;жи&shy;тель&shy;ные от&shy;зы&shy;вы.
+            Мы стре&shy;мим&shy;ся предо&shy;ста&shy;вить на&shy;шим кли&shy;ен&shy;там наи&shy;луч&shy;шее ка&shy;че&shy;ство по разумной цене.
             На&shy;ши про&shy;дук&shy;ты про&shy;шли стро&shy;гие ис&shy;пыта&shy;ния и по&shy;лу&shy;чи&shy;ли сер&shy;ти&shy;фи&shy;ка&shy;ты ка&shy;че&shy;ства.
           </p>
           <p>
@@ -45,24 +44,20 @@ const About = () => {
         <div className={styles.about_address}>
           <div className={styles.about_address_description}>
             <div className={styles.about_address_description_row}>
-              НАШИ
-              <br />АДРЕСА:
-              <br />
+              НАШИ АДРЕСА:
             </div>
             <div className={styles.about_address_description_column}>НАШИ АДРЕСА:</div>
           </div>
 
           <div className={styles.about_address_item}>г. Минск, ул. Инженерная д.4 {`(офис)`}</div>
           <div className={styles.about_address_item}>г. Минск, ул. Селицкого 113/2 {`(склад)`}</div>
+          <div className={styles.about_address_index}>Почтовый индекс - 220075</div>
         </div>
 
         <div className={styles.yandex_map}>
           <div className={styles.about_search}>
             <div className={styles.about_search_row}>
-              КАК
-              <br />НАС
-              <br />НАЙТИ
-              <br />?
+              КАК НАС НАЙТИ: 
             </div>
             <div className={styles.about_search_column}>КАК НАС НАЙТИ ?</div>
           </div>

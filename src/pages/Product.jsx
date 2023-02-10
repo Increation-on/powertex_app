@@ -26,12 +26,12 @@ const Product = () => {
     }).catch(err => console.log(err));
   }, []);
 
-
+  // "title": "Powertex A, 80 м<sup>2</sup> / Powertex A, 40 м<sup>2</sup>",
 
   return detailedProducts ? (
     <div className={styles.product_main}>
       <div className={styles.product_wrapper}>
-        <h1 className={styles.product_title}>{detailedProducts[productID].title}</h1>
+        <h1 className={styles.product_title} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].title)}}></h1>
         <p className={styles.product_description_short}>{detailedProducts[productID].caption}</p>
         <p className={styles.product_description_sizes} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].sizes) }}></p>
         <img src={detailedProducts[productID].img} alt="membrane" className={styles.product_img} />

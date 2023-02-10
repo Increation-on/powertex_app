@@ -11,7 +11,7 @@
 
 .about_description {
     margin-top: 10px;
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     hyphens: auto;
@@ -24,7 +24,7 @@
     width: auto;
     text-indent: 30px;
     padding-left: 15px;
-    padding-right: 10px;
+    padding-right: 0px;
     margin-top: 15px;
     text-align: justify;
    
@@ -36,12 +36,14 @@
     border-left: 1.5px solid#53524f;
     font-size: 45px;
     display: flex;
+    width: 30%;
     flex-direction: column;
 }
 
 .about_address_description {
     margin-top: 7vh;
     padding-left: 30px;
+    text-align: center;
 }
 
 .about_address_description_column {
@@ -57,12 +59,22 @@
     margin-top: 16px;
     font-size: 24px;
     margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.about_address_index {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 
 .yandex_map {
     color: #53524f;
     display: flex;
+    flex-direction: column;
     border-right: 1px solid #53524f;
 }
 
@@ -70,15 +82,17 @@
     padding-left: 20px;
     margin-top: 15vh;
     margin-right: 30px;
+    text-align: center;
     font-size: 45px;
 }
 
 .yandex_map iframe {
-    height: 100%;
+    margin-top: 30px;
+    height: 70%;
 }
 
 .about_scroll_top_button {
-    /* display: none; */
+    display: none;
 }
 
 
@@ -180,7 +194,7 @@
         border-radius: 40px;
         color: rgb(255, 240, 240);
         z-index: 3;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
     }
 }
@@ -192,6 +206,7 @@
     }
 
     .about_description p {
+        padding-right: 10px;
         font-size: 3vw;
     }
 
@@ -236,13 +251,18 @@
         left: 70vw;
         width: 60px;
         height: 60px;
+        top: 40vh;
         border-radius: 30px;
+    }
+
+    .yandex_map iframe {
+        height: 50vh;
     }
 }
 
 @media only screen and (max-height : 670px){
     .about_scroll_top_button {
-        top: 50vh;
+        top: 40vh;
     }
 }
 

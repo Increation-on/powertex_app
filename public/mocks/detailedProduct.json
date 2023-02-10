@@ -2,7 +2,7 @@
     "id": "1",
     "title": "Powertex A",
     "caption": "Гидро-ветрозащита",
-    "sizes": "80 м<sup>2</sup> (50 м) / 40 м<sup>2</sup> (25 м)",
+    
     "img": "/images/detailedProducts/mainImage/A.jpeg",
     "description": [{
         "id": "1",
@@ -33,8 +33,8 @@
         "title": "Технические характеристики",
         "features": [{
                 "id": "1",
-                "feature": "Плотность",
-                "value": "80 г/м<sup>2</sup>"
+                "feature": "Плотность, г/м<sup>2</sup>",
+                "value": "80"
             },
             {
                 "id": "2",
@@ -63,8 +63,18 @@
             },
             {
                 "id": "7",
-                "feature": "Ширина, м",
+                "feature": "Ширина, м.п",
                 "value": "1.6"
+            },
+            {
+                "id": "8",
+                "feature": "Длина, м.п",
+                "value": "50 / 25"
+            },
+            {
+                "id": "9",
+                "feature": "Площадь, м<sup>2</sup>",
+                "value": "80 / 40"
             }
         ]
     }

@@ -10,12 +10,13 @@
     background-image: url('./../../images/delivery-truck_bg.png');
     background-size: 100% 100%;
     margin: 0 auto;
+    width: 90%;
+    height: 90vh;
     display: flex;
-    width: 75%;
-    height: 80%;
 }
 
 .delivery {
+    width: 60%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -23,7 +24,7 @@
 
 .delivery_header {
     color: #53524f;
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: 500;
     margin-top: 20px;
     text-align: center;
@@ -33,8 +34,7 @@
     margin-top: 30px;
     text-align: left;
     color: #53524f;
-    font-size: 34px;
-    width: 80vw;
+    font-size: 30px;
 }
 
 span {
@@ -47,12 +47,12 @@ span {
 !!!!!!!!1111111!!!!!!!!!!*/
 
 
-@media all and (max-height: 915px) {
+/* @media all and (max-height: 915px) {
     .delivery_bg {
-        height: 70%;
+        height: 80vh;
         width: 95%;
     }
-}
+} */
 
 @media all and (max-width: 859px) {
     .delivery_wrapper {
@@ -77,6 +77,9 @@ span {
 
     .delivery_wrapper {
         height: 60vh;
+    }
+    .delivery {
+        width: 90%;
     }
 }
 
