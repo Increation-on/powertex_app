@@ -6,6 +6,7 @@
     height: 110px;
     width: 100%;
     background-image: url('./../../images/bg_footer.png');
+    z-index: 10003;
 }
 
 .menu_container {

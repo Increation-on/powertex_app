@@ -153,7 +153,7 @@
   }
 
   to {
-    right: 10vw;
+    right: 30vw;
   }
 }
 
@@ -163,49 +163,49 @@
   }
 
   to {
-    right: -10vw;
+    left: -25vw;
   }
 }
 
 @keyframes slidebottom_viewport {
   from {
-    top: 50vh;
+    top: 60vh;
   }
 
   to {
-    top: 12vh;
+    top: 41vh;
   }
 }
 
 @keyframes slidetop_viewport {
   from {
-    top: -15vh;
+    top: 12vh;
   }
 
   to {
-    top: 0;
+    top: 37vh;
   }
 }
 
 /* Keyframes fro media (height)!!! */
 
-@keyframes slideleft_viewport {
+@keyframes slideleft_viewport_height {
   from {
     right: 100vw;
   }
 
   to {
-    right: 10vw;
+    right: 37vw;
   }
 }
 
-@keyframes slideright_viewport {
+@keyframes slideright_viewport_height {
   from {
     left: 100vw;
   }
 
   to {
-    right: -12vw;
+    left: -10vw;
   }
 }
 
@@ -219,23 +219,62 @@
   }
 }
 
-@keyframes slidetop_viewport {
+@keyframes slidetop_viewport_height {
   from {
-    top: -15vh;
+    top: 0;
   }
 
   to {
-    top: 0;
+    top: 28vh;
   }
 }
 
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media all and (max-width: 916px) {
+  .main_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .animation_top {
+    position: fixed;
+    width: 45%;
+    height: 10vh;
+    /* margin-top: 2vh;
+    top: 37vh; */
+    animation-name: slidetop_viewport;
+  }
+
+  .animation_left {
+    position: fixed;
+    margin: 0 auto;
+    font-size: 4vw;
+    top: 47vh;
+    right: 30vw;
+    animation-name: slideleft_viewport;
+    animation-duration: 1.8s;
+  }
+
+  .animation_right {
+    position: fixed;
+    margin: 0 auto;
+    font-size: 4vw;
+    top: 55.5vh;
+    left: -25vw;
+    animation-name: slideright_viewport;
+    animation-duration: 2s;
+  }
+
+
+}
+
 
 @media all and (max-width: 859px) {
 
   .main_wrapper {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -246,33 +285,37 @@
   }
 
   .animation_top {
+    position: fixed;
     width: 45%;
     height: 10vh;
-    margin: 0 auto;
-    margin-top: 3vh;
-    top: 0;
+    top: 37vh;
     animation-name: slidetop_viewport;
   }
 
   .animation_left {
+    position: fixed;
+    z-index: 1000;
     margin: 0 auto;
-    top: 2.5vh;
-    right: 10vw;
+    font-size: 4.5vw;
+    top: 47vh;
+    right: 30vw;
     animation-name: slideleft_viewport;
     animation-duration: 1.8s;
   }
 
   .animation_right {
+    position: fixed;
     margin: 0 auto;
-    left: 10vw;
-    top: 4vh;
+    top: 55.5vh;
+    left: -25vw;
     animation-name: slideright_viewport;
     animation-duration: 2s;
   }
 
   .main_button_more {
+    /* display: none; */
     margin: 0 auto;
-    top: 12vh;
+    top: 41vh;
     left: 0;
     animation-duration: 2.3s;
     animation-name: slidebottom_viewport;
@@ -288,7 +331,6 @@
 
   .animation_top {
     height: 8vh;
-    margin-top: 3vh;
   }
 
   .animation_left {
@@ -318,31 +360,32 @@
     height: 90vh;
   }
   .animation_top {
+    position: fixed;
     width: 45%;
     height: 16vh;
     margin: 0 auto;
-    margin-top: 7vh;
-    top: 0;
-    animation-name: slidetop_viewport;
+    top: 28vh;
+    animation-name: slidetop_viewport_height;
   }
 
   .animation_left {
-    margin: 0 auto;
-    top: 10vh;
-    right: 10vw;
-    animation-name: slideleft_viewport;
+    position: fixed;
+    top: 45vh;
+    right: 37vw;
+    animation-name: slideleft_viewport_height;
     animation-duration: 1.8s;
   }
 
   .animation_right {
-    margin: 0 auto;
-    left: 10vw;
-    top: 7vh;
-    animation-name: slideright_viewport;
+    z-index: 10000;
+    left: -10vw;
+    top: 57vh;
+    animation-name: slideright_viewport_height;
     animation-duration: 2s;
   }
 
   .main_button_more {
+    display: none;
     margin: 0 auto;
     top: 17vh;
     left: 0;
@@ -352,25 +395,19 @@
 }
 
 @media only screen and (max-height : 400px) {
-  .animation_top {
+  /* .animation_top {
     width: 35%;
     height: 16vh;
     margin: 0 auto;
     margin-top: 10vh;
-    animation-name: slidetop_viewport;
-  }
+    animation-name: slidetop_viewport_height;
+  } */
 
   .animation_left {
-    margin: 0 auto;
-    top: 8vh;
-    right: 10vw;
     font-size: 8vh;
   }
 
   .animation_right {
-    margin: 0 auto;
-    left: 12vw;
-    top: 10vh;
     font-size: 8vh;
   }
 
