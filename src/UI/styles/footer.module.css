@@ -92,22 +92,27 @@
     .footer_company_information div {
         font-size: 13px;
     }
+
     .footer {
         height: auto;
     }
+
     .footer_company_information {
         width: 100%;
         margin-left: 0;
         text-align: center;
         border-bottom: 1px solid #53524f;
     }
+
     .footer_company_information div {
         font-size: 15px;
     }
+
     .menu_container {
         flex-direction: column;
         height: auto;
     }
+
     .footer_worktime {
         margin-top: 6px;
         text-align: center;
@@ -117,5 +122,54 @@
         margin-right: 0;
         margin: 0 auto;
         margin-top: 6px;
+    }
+}
+
+
+/* /////////4k//////////////////////// */
+
+@media all and (min-width: 2560px) {
+    .footer {
+        height: 200px;
+        background-size: 100% 100%;
+    }
+
+    .menu_container {
+        height: auto;
+    }
+
+    .footer_company_information {
+        width: 30%;
+
+    }
+
+    .footer_company_information_address {
+        font-size: 36px;
+    }
+
+    .footer_company_information_email {
+        font-size: 36px;
+    }
+
+    .footer_worktime {
+        font-size: 36px;
+    }
+
+    .footer_phones {
+        margin-right: 36px;
+    }
+
+    .footer_phones_icon {
+        margin-right: 7px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer_phones_numbers {
+        font-size: 36px;
+    }
+
+    .copyright {
+        font-size: 36px;
     }
 }

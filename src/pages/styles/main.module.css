@@ -173,7 +173,7 @@
   }
 
   to {
-    top: 41vh;
+    top: 40vh;
   }
 }
 
@@ -315,7 +315,7 @@
   .main_button_more {
     /* display: none; */
     margin: 0 auto;
-    top: 41vh;
+    top: 40vh;
     left: 0;
     animation-duration: 2.3s;
     animation-name: slidebottom_viewport;
@@ -395,14 +395,6 @@
 }
 
 @media only screen and (max-height : 400px) {
-  /* .animation_top {
-    width: 35%;
-    height: 16vh;
-    margin: 0 auto;
-    margin-top: 10vh;
-    animation-name: slidetop_viewport_height;
-  } */
-
   .animation_left {
     font-size: 8vh;
   }
@@ -415,3 +407,101 @@
     display: none;
   }
 }
+
+
+/* //////////////4k////////////////// */
+
+@media all and (min-width: 2560px) {
+  .main {
+    margin-top: 200px;
+  }
+
+  .animation_top {
+    width: 32vw;
+    height: 11vh;
+    top: 5%;
+    animation-duration: 1.2s;
+    animation-name: slidetop_4k;
+  }
+  
+  .animation_left {
+    font-size: 4vw;
+    display: inline-block;
+    width: auto;
+    top: 230px;
+    right: -10%;
+    animation-duration: 2.4s;
+    animation-name: slideleft_4k;
+  }
+  
+  
+  
+  .animation_right {
+    display: inline-block;
+    font-size: 4vw;
+    width: auto;
+    top: 400px;
+    right: -10%;
+    animation-duration: 2.5s;
+    animation-name: slideright_4k;
+  }
+  
+  
+  .main_button_more {
+    bottom: -50%;
+    background-size: 100% 100%;
+    font-size: 50px;
+    width: 400px;
+    height: 140px;
+    animation-duration: 2.5s;
+    animation-name: slidebottom_4k;
+  }
+
+}
+
+
+
+
+@keyframes slidetop_4k { 
+  from {
+    top: -15%;
+  }
+
+  to {
+    top: 5%;
+  }
+}
+
+@keyframes slideleft_4k {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: -10%;
+  }
+}
+
+@keyframes slideright_4k {
+  from {
+    right: -74%;
+  }
+
+  to {
+    right: -10%;
+  }
+}
+
+@keyframes slidebottom_4k {
+  from {
+    bottom: -100%;
+  }
+
+  to {
+    bottom: -50%;
+  }
+}
+
+
+
+

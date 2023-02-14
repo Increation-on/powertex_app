@@ -47,3 +47,16 @@ img {
     }
 } 
 
+
+
+/* 4k//////////////////// */
+
+@media all and (min-width: 2560px) {
+    img {
+        width: 250px;
+        height: 160px;
+    }
+}
+
+
+

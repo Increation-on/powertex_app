@@ -274,3 +274,39 @@
         top: 45vh;
     }
 }
+
+
+
+/* //////////////////////////////// */
+
+@media all and (min-width: 2560px) {
+  /* .main_about {
+    flex: 1 0 auto;
+    height: 100vh;
+  } */
+  .about_description p {
+    font-size: 46px;
+}
+
+.about_address_item {
+    font-size: 50px;
+}
+
+.about_address_index {
+    font-size: 40px;
+}
+
+.about_search {
+    font-size: 50px;
+}
+
+.yandex_map {
+    width: 30%;
+}
+
+.yandex_map iframe {
+    height: 70%;
+    width: 100%;
+}
+
+}

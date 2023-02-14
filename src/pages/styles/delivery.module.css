@@ -132,3 +132,15 @@ span {
 
 
 
+
+/* ///////////////////////4k/////////////////// */
+
+@media all and (min-width: 2560px) {
+    .delivery p {
+        font-size: 65px;
+    }
+}
+
+
+
+
