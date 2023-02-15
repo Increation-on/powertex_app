@@ -5,6 +5,8 @@ import Payment from "../pages/Payment";
 import Product from "../pages/Product";
 import Products from "../pages/Products";
 
+import ProductDBTEST from "../pages/ProductDBTest";
+
 const NamesById = {
     1: "Powertex A",
     2: "Powertex B",

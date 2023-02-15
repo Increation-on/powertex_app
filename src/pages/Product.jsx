@@ -4,10 +4,7 @@ import './styles/tabs.css';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';
-
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-
 import axios from 'axios';
 import Loader from './../UI/Loader';
 
@@ -27,21 +24,22 @@ const Product = () => {
     }).catch(err => console.log(err));
   }, []);
 
+
   // "title": "Powertex A, 80 м<sup>2</sup> / Powertex A, 40 м<sup>2</sup>",
 
   return detailedProducts ? (
     <div className={styles.product_main}>
       <div className={styles.product_wrapper}>
-        <h1 className={styles.product_title} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].title)}}></h1>
+        <h1 className={styles.product_title} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].title) }}></h1>
         <p className={styles.product_description_short}>{detailedProducts[productID].caption}</p>
         <p className={styles.product_description_sizes} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].sizes) }}></p>
         <img src={detailedProducts[productID].img} alt="membrane" className={styles.product_img} />
         <div className={styles.product_tabs}>
           <Tabs disableUpDownKeys={true}>
             <TabList>
-              <Tab defaultfocus="true"><div className={styles.tabs_header}>Описание</div></Tab>
-              <Tab><div className={styles.tabs_header}>Применение</div></Tab>
-              <Tab><div className={styles.tabs_header}>Технические характеристики</div></Tab>
+              <Tab defaultfocus="true" selectedClassName={styles.active_tab}><div className={styles.tabs_header}>Описание</div></Tab>
+              <Tab selectedClassName={styles.active_tab} ><div className={styles.tabs_header}>Применение</div></Tab>
+              <Tab selectedClassName={styles.active_tab}><div className={styles.tabs_header}>Технические характеристики</div></Tab>
             </TabList>
             <TabPanel>
               {detailedProducts[productID].description.map(descr => {
@@ -61,7 +59,7 @@ const Product = () => {
                 {detailedProducts[productID].applicate.map(item => {
                   return (
                     <div className={styles.applicate_description} key={item.id}>
-                      <h1 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.title)}}></h1>
+                      <h1 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.title) }}></h1>
                       <img src={item.img} alt="a1" />
                       <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.description) }}></p>
                     </div>
