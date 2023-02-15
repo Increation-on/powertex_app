@@ -35,11 +35,11 @@ const Product = () => {
         <p className={styles.product_description_sizes} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].sizes) }}></p>
         <img src={detailedProducts[productID].img} alt="membrane" className={styles.product_img} />
         <div className={styles.product_tabs}>
-          <Tabs disableUpDownKeys={true}>
+          <Tabs selectedTabClassName={styles.active_tab} disableUpDownKeys={true}>
             <TabList>
-              <Tab defaultfocus="true" selectedClassName={styles.active_tab}><div className={styles.tabs_header}>Описание</div></Tab>
-              <Tab selectedClassName={styles.active_tab} ><div className={styles.tabs_header}>Применение</div></Tab>
-              <Tab selectedClassName={styles.active_tab}><div className={styles.tabs_header}>Технические характеристики</div></Tab>
+              <Tab defaultfocus="true"><div className={styles.tabs_header}>Описание</div></Tab>
+              <Tab ><div className={styles.tabs_header}>Применение</div></Tab>
+              <Tab ><div className={styles.tabs_header}>Технические характеристики</div></Tab>
             </TabList>
             <TabPanel>
               {detailedProducts[productID].description.map(descr => {
