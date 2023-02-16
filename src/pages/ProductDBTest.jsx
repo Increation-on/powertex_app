@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles/product.module.css';
-import './styles/tabs.css';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';

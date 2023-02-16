@@ -40,7 +40,7 @@
   text-shadow: 2px 2px 2px black;
   width: 400px;
   top: 150px;
-  right: -24%;
+  right: -20%;
   height: 50px;
   justify-content: center;
   animation-duration: 2.4s;
@@ -52,6 +52,7 @@
 
 
 .animation_right {
+  display: inline-block;
   position: relative;
   display: flex;
   align-items: center;
@@ -59,9 +60,9 @@
   font-size: 38px;
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
-  width: 400px;
+  width: auto;
   top: 150px;
-  right: -50%;
+  right: -15%;
   height: 50px;
   justify-content: center;
   animation-duration: 2.5s;
@@ -116,21 +117,21 @@
 
 @keyframes slideleft {
   from {
-    right: 0;
+    right: 50%;
   }
 
   to {
-    right: -24%;
+    right: -20%;
   }
 }
 
 @keyframes slideright {
   from {
-    right: -74%;
+    right: -75%;
   }
 
   to {
-    right: -50%;
+    right: -15%;
   }
 }
 
