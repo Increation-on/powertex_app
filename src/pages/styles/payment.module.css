@@ -64,16 +64,18 @@ p {
         font-size: 40px;
     }
 
-   .payment p {
+    .payment p {
         font-size: 4.2vw;
     }
 
     .payment_bg {
         height: 70%;
     }
+
     .payment_wrapper {
-        height: 60vh;
+        height: auto;
     }
+
     .payment {
         width: 100%;
     }

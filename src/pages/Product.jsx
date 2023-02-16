@@ -60,7 +60,7 @@ const Product = () => {
                   return (
                     <div className={styles.applicate_description} key={item.id}>
                       <h1 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.title) }}></h1>
-                      <img src={item.img} alt="a1" />
+                      <img className={item.img ? "" : styles.applicate_description_noimage} src={item.img} alt="" />
                       <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.description) }}></p>
                     </div>
                   )

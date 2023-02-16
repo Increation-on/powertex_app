@@ -51,6 +51,13 @@ const About = () => {
           <div className={styles.about_address_item}>г. Минск, ул. Инженерная д.4 {`(офис)`}</div>
           <div className={styles.about_address_item}>г. Минск, ул. Селицкого 113/2 {`(склад)`}</div>
           <div className={styles.about_address_index}>Почтовый индекс - 220075</div>
+          <div className={styles.about_address_requisites}>
+            <b>Банковские реквизиты:</b>
+            <br />
+            <br />УНП: 193620401, р/c: BY 40 PJCB 3012 0717311000000 933 в Приорбанк ОАО
+            <br />
+            <br />БИК: PJCBBY2X
+          </div>
         </div>
 
         <div className={styles.yandex_map}>

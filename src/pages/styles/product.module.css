@@ -70,7 +70,7 @@
 
 .active_tab {
     background: #fff;
-    border-color: #53524f !important;
+    border-color: #aaa !important;
     color: #fd3400;
     border-radius: 5px 5px 0 0;
 }
@@ -103,6 +103,10 @@
     padding-bottom: 30px;
     width: 40%;
     height: 300px;
+}
+
+.applicate_description_noimage {
+    display: none;
 }
 
 .applicate_description span {
