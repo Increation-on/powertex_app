@@ -164,7 +164,7 @@
   }
 
   to {
-    left: -25vw;
+    left: 20vw;
   }
 }
 
@@ -188,7 +188,7 @@
   }
 }
 
-/* Keyframes fro media (height)!!! */
+/* Keyframes for media (height)!!! */
 
 @keyframes slideleft_viewport_height {
   from {
@@ -308,7 +308,7 @@
     position: fixed;
     margin: 0 auto;
     top: 55.5vh;
-    left: -25vw;
+    left: 20vw;
     animation-name: slideright_viewport;
     animation-duration: 2s;
   }
