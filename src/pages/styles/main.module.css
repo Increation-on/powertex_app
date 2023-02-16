@@ -62,7 +62,7 @@
   text-transform: uppercase;
   width: auto;
   top: 150px;
-  right: -15%;
+  right: -12%;
   height: 50px;
   justify-content: center;
   animation-duration: 2.5s;
@@ -94,7 +94,7 @@
   cursor: pointer;
   transition: .2s;
   transform: scale(1);
-  animation-duration: 2.5s;
+  animation-duration: 3.5s;
   animation-name: slidebottom;
 }
 
@@ -107,7 +107,7 @@
 
 @keyframes slidetop {
   from {
-    top: -8%;
+    top: -15%;
   }
 
   to {
@@ -131,7 +131,7 @@
   }
 
   to {
-    right: -15%;
+    right: -12%;
   }
 }
 
