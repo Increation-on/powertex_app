@@ -87,8 +87,8 @@
         "id": "2",
         "title": "Powertex B",
         "caption": "Пароизоляция",
-        "img": "/images/detailedProducts/mainImage/A.jpeg",
-        "sizes": "80 м<sup>2</sup> (50 м) / 40 м<sup>2</sup> (25 м)",
+        "img": "/images/detailedProducts/mainImage/B4080.jpg",
+        "sizes": "80 м<sup>2</sup> (50 м.п) / 40 м<sup>2</sup> (25 м.п)",
         "description": [
             {
                 "id": "1",
@@ -162,7 +162,7 @@
         "id": "3",
         "title": "Powertex С 80 м<sup>2</sup> / Powertex С 40 м<sup>2</sup>",
         "caption": "Ветрозащитная мембрана",
-        "img": "/images/detailedProducts/mainImage/A.jpeg",
+        "img": "/images/detailedProducts/mainImage/C4080.jpg",
         "description": [
             {
                 "id": "1",
