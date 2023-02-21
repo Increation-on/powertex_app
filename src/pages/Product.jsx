@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 import axios from 'axios';
 import Loader from './../UI/Loader';
 
@@ -23,8 +24,6 @@ const Product = () => {
     }).catch(err => console.log(err));
   }, []);
 
-
-  // "title": "Powertex A, 80 м<sup>2</sup> / Powertex A, 40 м<sup>2</sup>",
 
   return detailedProducts ? (
     <div className={styles.product_main}>

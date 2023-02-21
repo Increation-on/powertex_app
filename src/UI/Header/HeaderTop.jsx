@@ -10,8 +10,6 @@ const HeaderTop = () => {
 
     const [menu, setMenu] = useState();
 
-    const [testMenu, setTestMenu] = useState();
-
     useEffect(() => {
         axios.get('/mocks/headerNav.json').then(response => {
             const data = response.data;
