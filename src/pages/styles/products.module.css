@@ -117,7 +117,7 @@
 
 @media all and (max-width: 859px) {
     .main_products {
-        margin-top: 35vh;
+        margin-top: 36vh;
     }
 
     .products_wrapper {
@@ -130,7 +130,7 @@
         margin: 0 auto;
         margin-bottom: 20px;
         width: 40vw;
-        height: 20vh;
+        height: auto;
     }
 }
 
@@ -139,11 +139,16 @@
     .products_wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    .main_products {
+        padding-bottom: 10px;
     }
 
 
     .preview_card {
+        margin-top: 15px;
         width: 90vw;
         height: 70vh;
     }
@@ -168,14 +173,14 @@
 
 @media all and (max-width: 290px) {
     .preview_card {
-        height: 40vh;
+        height: auto;
     }
 }
 
 
 @media only screen and (max-height : 415px) {
     .preview_card {
-        height: 65vh;
+        height: auto;
     }
 
     .description {
@@ -183,14 +188,14 @@
     }
 }
 
-@media only screen and (max-height : 391px) {
+@media only screen and (max-height : 400px) {
     .products_wrapper {
-        grid-template-columns: repeat(2, 40vw);
+        grid-template-columns: repeat(2, 44vw);
     }
 
     .preview_card {
-        height: 70vh;
-        width: 35vw;
+        height: auto;
+        width: 45vw;
     }
 
     .description {
