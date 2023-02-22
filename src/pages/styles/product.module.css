@@ -36,10 +36,15 @@
     font-size: 24px;
 }
 
-.product_img {
+.product_wrapper img {
     margin: 0 auto;
+    text-align: center;
     width: 800px;
     height: 500px;
+}
+
+.product_img_wrapper {
+    margin: 0 auto;
 }
 
 .product_description_title {

@@ -7,6 +7,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import axios from 'axios';
 import Loader from './../UI/Loader';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const Product = () => {
@@ -31,7 +33,16 @@ const Product = () => {
         <h1 className={styles.product_title} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].title) }}></h1>
         <p className={styles.product_description_short}>{detailedProducts[productID].caption}</p>
         <p className={styles.product_description_sizes} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(detailedProducts[productID].sizes) }}></p>
-        <img src={detailedProducts[productID].img} alt="membrane" className={styles.product_img} />
+        {/* <img src={detailedProducts[productID].img} alt="membrane" className={styles.product_img} /> */}
+        <LazyLoadImage 
+          alt='membrane' 
+          src={detailedProducts[productID].img} 
+          placeholderSrc={detailedProducts[productID].lazyimg}
+          effect='blur'
+          wrapperClassName={styles.product_img_wrapper}
+          width={800}
+          height={500}
+        />
         <div className={styles.product_tabs}>
           <Tabs selectedTabClassName={styles.active_tab} disableUpDownKeys={true}>
             <TabList>

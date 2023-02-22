@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import styles from './styles/products.module.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import Loader from './../UI/Loader';
+import ProductCardFallback from './ProductCardFallback';
+
+const LazyProductCard = React.lazy(() => import('./ProductCard'));
 
 
 const Products = () => {
@@ -19,34 +21,18 @@ const Products = () => {
 
   }, []);
 
-  const cardRef = useRef();
-
 
   return (
     <main className={styles.main_products}>
-      <div  className={styles.products_wrapper}>
-
+      <div className={styles.products_wrapper}>
 
         {products ? products.map(product => {
           return (
-
-            <Link ref={cardRef} to={`${product.url}/${product.id}`} key={product.id}
-              className={styles.preview_card}
-              style={{ backgroundImage: `url(${product.img})` }}
-            >
-              {/* <div className={styles.products_description}>
-                <div className={styles.title}>{product.title}</div>
-                <div className={styles.description}>{product.description}</div>
-              </div> */}
-
-              <div className={styles.title_test}>{product.title}</div>
-              <div className={styles.description_test}>{product.description}</div>
-            </Link>
-
+            <Suspense fallback={<ProductCardFallback product={product}/>}>
+              <LazyProductCard product={product} />
+            </Suspense>
           )
         }) : <Loader />}
-
-
 
       </div>
     </main>
