@@ -28,7 +28,7 @@ const Products = () => {
 
         {products ? products.map(product => {
           return (
-            <Suspense fallback={<ProductCardFallback key={product.id} product={product}/>}>
+            <Suspense key={product.id} fallback={<ProductCardFallback key={product.id} product={product}/>}>
               <LazyProductCard key={product.id} product={product} />
             </Suspense>
           )

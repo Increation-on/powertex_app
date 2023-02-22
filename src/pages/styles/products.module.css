@@ -162,7 +162,7 @@
 
 @media all and (max-width: 340px) {
     .preview_card {
-        height: 50vh;
+        height: auto;
     }
 
     .description {
