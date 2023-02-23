@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "title": "Powertex A",
+        "title": "Powertex A 80 м<sup>2</sup> <span>/</span> Powertex A 40 м<sup>2</sup>",
         "caption": "Гидро-ветрозащита",
         "img": "/images/detailedProducts/mainImage/A4080.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/A4080-min.jpg",
@@ -86,11 +86,10 @@
     },
     {
         "id": "2",
-        "title": "Powertex B",
+        "title": "Powertex B 80 м<sup>2</sup> <span>/</span> Powertex B 40 м<sup>2</sup>",
         "caption": "Пароизоляция",
         "img": "/images/detailedProducts/mainImage/B4080.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/B4080-min.jpg",
-        "sizes": "80 м<sup>2</sup> (50 м.п) / 40 м<sup>2</sup> (25 м.п)",
         "description": [
             {
                 "id": "1",
@@ -154,7 +153,7 @@
                 },
                 {
                     "id": "7",
-                    "feature": "Ширина, м",
+                    "feature": "Ширина, м.п",
                     "value": "1.6"
                 },
                 {
@@ -239,7 +238,7 @@
                 },
                 {
                     "id": "7",
-                    "feature": "Ширина, м",
+                    "feature": "Ширина, м.п",
                     "value": "1.6"
                 },
                 {
@@ -257,11 +256,10 @@
     },
     {
         "id": "4",
-        "title": "Powertex D",
+        "title": "Powertex D 75 м<sup>2</sup> <span>/</span> Powertex D 30 м<sup>2</sup>",
         "caption": "Гидро-пароизоляция",
         "img": "/images/detailedProducts/mainImage/D3075.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/D3075-min.jpg",
-        "sizes": "75 м<sup>2</sup> (50 м) / 30 м<sup>2</sup> (20 м)",
         "description": [
             {
                 "id": "1",
@@ -325,19 +323,28 @@
                 },
                 {
                     "id": "7",
-                    "feature": "Ширина, м",
+                    "feature": "Ширина, м.п",
                     "value": "1.5"
+                },
+                {
+                    "id": "8",
+                    "feature": "Длина, м.п",
+                    "value": "50 / 20"
+                },
+                {
+                    "id": "9",
+                    "feature": "Площадь, м<sup>2</sup>",
+                    "value": "75 / 30"
                 }
             ]
         }
     },
     {
         "id": "5",
-        "title": "Powertex М90",
+        "title": "Powertex M90 75 м<sup>2</sup> <span>/</span> Powertex M90 30 м<sup>2</sup>",
         "caption": "Мембрана трехаслойноя супердиффузионная",
         "img": "/images/detailedProducts/mainImage/M903075.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/M903075-min.jpg",
-        "sizes": "75 м<sup>2</sup> (50 м) / 30 м<sup>2</sup> (20 м)",
         "description": [
             {
                 "id": "1",
@@ -409,7 +416,7 @@
                 },
                 {
                     "id": "11",
-                    "feature": "Ширина, м",
+                    "feature": "Ширина, м.п",
                     "value": "1.5"
                 },
                 {
@@ -427,11 +434,10 @@
     },
     {
         "id": "6",
-        "title": "Powertex M110",
+        "title": "Powertex M 110 75 м<sup>2</sup> <span>/</span> Powertex M 110 30 м<sup>2</sup>",
         "caption": "Мембрана трехслойноя супердиффузионная",
         "img": "/images/detailedProducts/mainImage/M1103075.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/M1103075-min.jpg",
-        "sizes": "75 м<sup>2</sup> (50 м) / 30 м<sup>2</sup> (20 м)",
         "description": [
             {
                 "id": "1",
@@ -503,7 +509,7 @@
                 },
                 {
                     "id": "11",
-                    "feature": "Ширина, м",
+                    "feature": "Ширина, м.п",
                     "value": "1.5"
                 },
                 {
@@ -521,11 +527,10 @@
     },
     {
         "id": "7",
-        "title": "Powertex M140",
+        "title": "Powertex M140 75 м<sup>2</sup> <span>/</span> Powertex  M140 30 м<sup>2</sup>",
         "caption": "Мембрана трехслойноя супердиффузионная",
         "img": "/images/detailedProducts/mainImage/M1403075.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/M1403075-min.jpg",
-        "sizes": "75 м<sup>2</sup> (50 м) / 30 м<sup>2</sup> (20 м)",
         "description": [
             {
                 "id": "1",
@@ -614,8 +619,8 @@
         }
     },
     {
-        "id": "9",
-        "title": "Powertex D+",
+        "id": "8",
+        "title": "Powertex D+ 60 м<sup>2</sup> <span>/</span> Powertex D+ 30 м<sup>2</sup>",
         "caption": "Гидро-пароизоляция",
         "img": "/images/detailedProducts/mainImage/D+3060.jpg",
         "lazyimg": "/images/detailedProducts/mainImage/D+3075-min.jpg",
@@ -683,7 +688,7 @@
                 },
                 {
                     "id": "7",
-                    "feature": "Ширина, м",
+                    "feature": "Ширина, м.п",
                     "value": "1.5"
                 },
                 {
