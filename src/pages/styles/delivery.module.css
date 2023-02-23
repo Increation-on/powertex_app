@@ -115,11 +115,13 @@ span {
 
 @media only screen and (max-height : 415px){
     .delivery_wrapper {
-        min-height: 100vh;
+        margin-top: 25vh;
+        height: auto;
     }
     .delivery_bg {
-        height: 100vh;
+        height: auto;
         width: 95%;
+        padding-bottom: 20px;
     }
     .delivery_header {
        font-size: 5vw;
