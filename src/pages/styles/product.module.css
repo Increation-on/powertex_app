@@ -292,14 +292,14 @@
 @media all and (max-width: 415px) {
     .product_img_wrapper {
         margin-top: 30px;
-        width: 82vw;
-        height: 30vh;
+        width: 83vw;
+        height: 33vh;
     }
 
     .product_wrapper img {
         margin-top: 30px;
-        width: 82vw;
-        height: 30vh;
+        width: 83vw;
+        height: 33vh;
     }
 
     .product_title {
