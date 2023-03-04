@@ -13,7 +13,7 @@
     margin: 0 auto;
     display: flex;
     width: 90%;
-    height: 100vh;
+    height: auto;
 }
 
 .payment {
@@ -136,8 +136,13 @@ p {
     .payment p {
         font-size: 65px;
     }
+
     .payment {
         height: auto;
         padding-bottom: 20px;
+    }
+
+    .payment_wrapper {
+        height: auto;
     }
 }
