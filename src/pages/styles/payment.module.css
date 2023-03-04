@@ -132,7 +132,7 @@ p {
 /* ///////////////////////4k///////////////////// */
 
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 1560px) {
     .payment p {
         font-size: 65px;
     }
