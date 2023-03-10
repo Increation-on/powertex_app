@@ -132,14 +132,14 @@ p {
 /* ///////////////////////4k///////////////////// */
 
 
-@media all and (min-width: 1560px) {
+@media all and (min-width: 1600px) {
     .payment p {
         font-size: 65px;
     }
 
     .payment {
         height: auto;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
 
     .payment_wrapper {

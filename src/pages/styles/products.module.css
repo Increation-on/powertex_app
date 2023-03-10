@@ -106,7 +106,7 @@
     }
 
     .preview_card {
-        height: 90vh;
+        height: 30vh;
     }
 }
 
@@ -210,7 +210,7 @@
 /* /////////////////////4k//////////////////// */
 
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 1600px) {
 
     .products_wrapper {
         grid-template-columns: repeat(3, 30%);
@@ -219,16 +219,24 @@
 
     .preview_card {
         width: 32vw;
-        height: 55vh;
+        height: 60vh;
     }
 
-    .title {
+    /* .title {
         margin-top: 25px;
         font-size: 50px;
     }
 
     .description {
         font-size: 1.4vw;
+    } */
+
+    .title_test {
+        font-size: 2.5vw;
+    }
+    
+    .description_test {
+        font-size: 1.6vw;
     }
 
 }

@@ -60,7 +60,7 @@
 
 .product_description_wrapper {
     margin: 0 auto;
-    height: 100%;
+    height: auto;
     width: 85%;
 }
 
@@ -338,50 +338,68 @@
     }
 }
 
+@media only screen and (min-height : 1300px) {
+    .product_description_wrapper {
+        height: 60vh;
+    }
+}
+
 
 /* ///////////4k////////////////// */
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 1600px) {
     .product_title {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .product_description_short {
         font-size: 2vw;
     }
 
-    .product_img {
-        width: 35vw;
-        height: 50vh;
+    .product_wrapper img {
+        margin: 0 auto;
+        text-align: center;
+        width: 50vw;
+        height: 60vh;
+    }
+    
+    .product_img_wrapper {
+        margin: 0 auto;
+        width: 50vw;
+        height: 60vh;
     }
 
     .product_description_title {
         font-size: 3.5vw;
     }
 
+    .product_description_wrapper {
+        height: auto;
+    }
+
 
     .product_description {
         text-indent: 100px;
         text-align: left;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .tabs_header {
-        font-size: 3vw;
+        font-size: 2.4vw;
     }
 
     .applicate_description h1 {
-        font-size: 2.7vw;
+        font-size: 2.6vw;
     }
 
     .applicate_description p {
         text-indent: 100px;
-        font-size: 2.3vw;
+        font-size: 2vw;
     }
 
     .applicate_description img {
         width: 60%;
-        height: 35vh;
+        height: 45vh;
     }
 
     .specifications_table_row {

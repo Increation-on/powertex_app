@@ -23,7 +23,7 @@
   border-bottom-right-radius: 15px;
   width: 450px;
   height: 90px;
-  top: 8%;
+  top: 7vh;
   margin: auto;
   animation-duration: 1.2s;
   animation-name: slidetop;
@@ -39,7 +39,7 @@
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
   width: 400px;
-  top: 150px;
+  top: 15vh;
   right: -20%;
   height: 50px;
   justify-content: center;
@@ -61,7 +61,7 @@
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
   width: auto;
-  top: 150px;
+  top: 17vh;
   right: -12%;
   height: 50px;
   justify-content: center;
@@ -107,11 +107,11 @@
 
 @keyframes slidetop {
   from {
-    top: -15%;
+    top: -20vh;
   }
 
   to {
-    top: 8%;
+    top: 7vh;
   }
 }
 
@@ -412,7 +412,7 @@
 
 /* //////////////4k////////////////// */
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 1600px) {
   .main {
     margin-top: 200px;
   }

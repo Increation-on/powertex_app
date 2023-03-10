@@ -288,13 +288,13 @@
 
 /* 4k //////////////////////////////////////////////// */
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 1600px) {
     .header {
         height: 200px;
     }
     
     .menu_item {
-        font-size: 45px;
+        font-size: 40px;
     }
     
     .telephone_icon {

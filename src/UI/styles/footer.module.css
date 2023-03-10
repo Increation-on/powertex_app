@@ -128,9 +128,9 @@
 
 /* /////////4k//////////////////////// */
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 1600px) {
     .footer {
-        height: 200px;
+        height: 240px;
         background-size: 100% 100%;
     }
 
@@ -139,7 +139,7 @@
     }
 
     .footer_company_information {
-        width: 30%;
+        width: 32%;
 
     }
 
