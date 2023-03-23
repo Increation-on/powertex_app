@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoTest from './LogoTest';
 import Phones from '../Phones';
-import search from './../../../images/search_icon.png';
+import HeaderSearch from './HeaderSearch';
+
 
 
 const HeaderTopTest = () => {
@@ -30,12 +31,7 @@ const HeaderTopTest = () => {
             <div className={styles.header_items_container}>
                 <div className={styles.header_top_items_container}>
                     <LogoTest />
-                    <div className={styles.header_search}>
-                        <input type="text" />
-                        <span className={styles.header_search_ico}>
-                            <img src={search} alt="search" />
-                        </span>
-                    </div>
+                    <HeaderSearch/>
                     <div className={styles.header_phones_test}><Phones /></div>
                 </div>
 

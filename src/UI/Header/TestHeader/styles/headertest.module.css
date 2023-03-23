@@ -23,26 +23,6 @@
     height: 15vh;
 }
 
-.header_search {
-    border: 2px solid #53524f;
-    border-radius: 3px;
-}
-
-.header_search input {
-    width: 20vw;
-    height: 3.8vh;
-    outline: none;
-    padding: 5px;
-    font-size: 18px;
-}
-
-.header_search_ico img{
-    height: 3.8vh;
-    width: 34px;
-    padding: 4px;
-    border-left: 2px solid #53524f;
-    cursor: pointer;
-}
 
 
 .header_bottom_items_container {

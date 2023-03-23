@@ -1,0 +1,111 @@
+.header_search {
+    /* border: 2px solid #53524f; */
+    /* border-top: 2px solid #53524f;
+    border-left: 2px solid #53524f;
+    border-right: 2px solid #53524f; */
+    width: 20vw;
+    position: relative;
+    display: flex;
+}
+
+.header_search input {
+    width: 100%;
+    height: 4.9vh;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #53524f;
+    border: 2px solid #53524f;
+}
+
+.autocomplete {
+    position: absolute;
+    width: 100%;
+    top: 36px;
+    color: #53524f;
+    background: #ffff;
+    z-index: 10000;
+    border-bottom: 2px solid #53524f;
+    border-left: 2px solid #53524f;
+    border-right: 2px solid #53524f;
+    border-radius: 3px;
+    max-height: 160px;
+    height: auto;
+    overflow: auto;
+}
+
+.autocomplete_close {
+    display: none;
+}
+
+.autocomplete_item {
+    padding: 10px;
+    display: flex;
+}
+
+.autocomplete_item a{
+    width: 100%;
+    height: 100%;
+    color: #53524f;
+}
+
+.autocomplete_item:hover {
+    background: rgb(228, 222, 222);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s all;
+    cursor: pointer;
+}
+
+.header_search_ico_search {
+    height: 100%;
+    width: 35px;
+    padding: 5px;
+    border-left: 2px solid #53524f;
+    border-bottom: 2px solid #53524f;
+    border-top: 2px solid #53524f;
+}
+
+.header_search_ico_close {
+    height: 100%;
+    width: 35px;
+    padding: 8px;
+    border-left: 2px solid #53524f;
+    border-bottom: 2px solid #53524f;
+    border-top: 2px solid #53524f;
+    cursor: pointer;
+}
+
+
+
+@media all and (min-width: 1600px) {
+    .header_search {
+        width: 30vw;
+        position: relative;
+    }
+
+    .header_search input {
+        font-size: 32px;
+    }
+
+    .autocomplete {
+        font-size: 28px;
+        max-height: 180px;
+        top: 68px;
+    }
+
+    .header_search_ico_search {
+        height: 100%;
+        width: 65px;
+        padding: 10px;
+        border-left: 2px solid #53524f;
+        border-bottom: 2px solid #53524f;
+    }
+    .header_search_ico_close {
+        height: 100%;
+        width: 65px;
+        padding: 15px;
+        border-left: 2px solid #53524f;
+        border-bottom: 2px solid #53524f;
+        border-top: 2px solid #53524f;
+        cursor: pointer;
+    }
+}
