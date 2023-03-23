@@ -1,4 +1,4 @@
-import styles from './../styles/header.module.css';
+import styles from './../styles/breadcrumbs.module.css';
 import { routes } from './../../router/routes';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import { Link } from 'react-router-dom';

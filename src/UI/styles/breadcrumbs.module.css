@@ -1,0 +1,58 @@
+.breadcrumbs {
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 35vh;
+    width: 80%;
+    justify-content: start;    
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.breadcrumbs li:not(:first-child) {
+    margin-left: 15px;
+}
+
+.breadcrumb:not(:last-child)::after {
+    color: #53524f;
+    margin-left: 5px;
+    content: " >";
+}
+
+.breadcrumb_pointer_disable {
+    display: none;
+}
+
+.breadcrumb a {
+    color: #53524f;
+}
+
+.breadcrumb a:hover {
+    color: red;
+}
+
+.breadcrumb_last {
+    color: rgb(182, 177, 177);
+    pointer-events: none;
+}
+
+@media all and (max-width: 860px) {
+    .breadcrumbs {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .breadcrumbs {
+        height: 40px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 30vh;
+        width: 81%;
+        justify-content: start;    
+        align-items: center;
+        font-size: 26px;
+        font-weight: 400;
+    }
+}

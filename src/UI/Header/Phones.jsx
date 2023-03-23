@@ -1,5 +1,5 @@
 import { telephones } from '../../contstants';
-import styles from './../styles/header.module.css';
+import styles from './../styles/phones.module.css';
 
 const Phones = () => {
     return (

@@ -1,0 +1,58 @@
+.logo {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo_disabled {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+img {
+    width: 140px;
+    height: 100px;
+}
+
+.logo_wrapper {
+    margin-top: 5px;
+}
+
+/* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media all and (max-width: 859px) {
+    img {
+        width: 180px;
+        height: 17vh;
+    }
+    .logo_wrapper {
+        margin-left: 0px;
+        margin-top: 2.5vh;
+    }
+}
+
+@media only screen and (max-height : 455px) and (max-width: 859px) {
+    img {
+        width: 120px;
+        height: 20vh;
+        margin-left: 20px;
+    }
+    .logo_wrapper {
+        margin-top: 0.8vh;
+    }
+} 
+
+
+
+/* 4k//////////////////// */
+
+@media all and (min-width: 1600px) {
+    img {
+        width: 230px;
+        height: 160px;
+    }
+}
+
+
+

@@ -4,13 +4,15 @@ import Header from './UI/Header/Header';
 import Footer from './UI/Footer/Footer';
 import './index.css';
 import ScrollToTop from './ScrollToTop';
+import AppRouterTest from './router/AppRouterTest';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='wrapper'>
         <Header />
-        <AppRouter />
+        {/* <AppRouter /> */}
+        <AppRouterTest/>
         <Footer />
         <ScrollToTop/>
       </div>
