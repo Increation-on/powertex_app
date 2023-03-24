@@ -130,7 +130,7 @@
 
 @media all and (min-width: 1600px) {
     .footer {
-        height: 240px;
+        height: 210px;
         background-size: 100% 100%;
     }
 
@@ -145,15 +145,15 @@
     }
 
     .footer_company_information_address {
-        font-size: 1.7vw;
+        font-size: 1.4vw;
     }
 
     .footer_company_information_email {
-        font-size: 1.7vw;
+        font-size: 1.4vw;
     }
 
     .footer_worktime {
-        font-size: 1.8vw;
+        font-size: 1.4vw;
     }
 
     .footer_phones {
@@ -167,12 +167,12 @@
     }
 
     .footer_phones_numbers {
-        font-size:  1.8vw;
+        font-size:  1.4vw;
     }
 
     .copyright {
         padding-top: 12px;
-        font-size: 1.7vw;
+        font-size: 1.3vw;
         height: auto;
     }
 }

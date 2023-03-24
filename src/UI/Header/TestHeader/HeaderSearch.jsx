@@ -38,6 +38,7 @@ const HeaderSearch = () => {
     const itemClickHandler = (e) => {
         setSearchItem(e.target.textContent);
         setAutocompleteHide(false);
+        // setSearchItem('');
     }
 
 
