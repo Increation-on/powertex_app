@@ -14,7 +14,7 @@ const HeaderSearch = () => {
 
     useEffect(() => {
 
-        axios.get('/mocks/detailedProduct.json').then(response => {
+        axios.get('/mocks/appSearch.json').then(response => {
             const data = response.data;
             setDataList(data);
         }).catch(err => console.log(err));
@@ -29,11 +29,15 @@ const HeaderSearch = () => {
         });
     }
 
-    const [autoCompleteHide, setAutocompleteHide] = useState(false);
+    const [autoCompleteHide, setAutocompleteHide] = useState(true);
+
+    const inputClickHandler = () => {
+        setAutocompleteHide(true);
+    }
 
     const itemClickHandler = (e) => {
         setSearchItem(e.target.textContent);
-        setAutocompleteHide(true);
+        setAutocompleteHide(false);
     }
 
 
@@ -63,18 +67,25 @@ const HeaderSearch = () => {
                 autoComplete="off"
                 placeholder="Поиск по сайту"
                 onChange={(e) => setSearchItem(e.target.value)}
-            // onClick={inputClickHandler}
+                onClick={inputClickHandler}
             />
             {/* <ul className={searchItem && autoCompleteHide ? styles.autocomplete_close: styles.autocomplete}> */}
-            <ul className={searchItem  ?  styles.autocomplete : styles.autocomplete_close}>
-                {dataList && searchItem ? filteredItems.map((el) => {
+            <ul className={searchItem ? styles.autocomplete : styles.autocomplete_close}>
+                {dataList && searchItem && autoCompleteHide ? filteredItems.map((el) => {
                     return (
 
                         <li
                             key={el.id} className={styles.autocomplete_item}
 
                         >
-                            <Link onClick={itemClickHandler} to={`products/${el.id}`}> {el.title.slice(0, 13)} </Link>
+                            {el.title[0] === "P"
+                                ?
+                                <Link onClick={itemClickHandler} to={`${el.url}/${el.id}`}>{el.title}</Link>
+                                :
+                                <Link onClick={itemClickHandler} to={`${el.url}`}>{el.title}</Link>
+                            }
+
+
                         </li>
 
 

@@ -1,0 +1,62 @@
+[
+    {
+        "title":"Powertex A",
+        "id": 1,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex B",
+        "id": 2,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex C",
+        "id": 3,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex D",
+        "id": 4,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex M90",
+        "id": 5,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex M110",
+        "id": 6,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex M140",
+        "id": 7,
+        "url": "/products"
+    },
+    {
+        "title":"Powertex D+",
+        "id": 8,
+        "url": "/products"
+    },
+    {
+        "title":"О компании",
+        "id": 9,
+        "url": "/about"
+    },
+    {
+        "title":"Оплата",
+        "id": 10,
+        "url": "/payment"
+    },
+    {
+        "title":"Доставка",
+        "id": 11,
+        "url": "/delivery"
+    },
+    {
+        "title":"Продукция",
+        "id": 12,
+        "url":"/products"
+    }
+]
