@@ -74,6 +74,29 @@
     cursor: pointer;
 }
 
+/* ///////////////////1024///////////// */
+
+
+@media all and (max-width: 1024px) {
+    .header_search {
+        width: 30vw;
+        position: relative;
+    }
+
+    .header_search_ico_search {
+        height: 89%;
+    }
+    
+    .header_search_ico_close {
+        height: 89%;
+    }
+
+    .autocomplete {
+        position: absolute;
+        top: 30px;
+        max-height: 130px;
+    }
+}
 
 
 @media all and (min-width: 1600px) {

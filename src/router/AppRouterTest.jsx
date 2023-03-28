@@ -39,8 +39,8 @@ const AppRouterTest = () => {
 
     return (
         <Routes>
-            <Route path={'/main'} breadcrumb="Главная" element={screenWidth <= 1100 ? <Main /> : <MainTest />} />
-            <Route path={'/'} breadcrumb="Главная" element={screenWidth <= 1100 ? <Main /> : <MainTest />} />
+            <Route path={'/main'} breadcrumb="Главная" element={screenWidth <= 859 ? <Main /> : <MainTest />} />
+            <Route path={'/'} breadcrumb="Главная" element={screenWidth <= 859 ? <Main /> : <MainTest />} />
             <Route path={'/about'} breadcrumb="О нас" element={<About />} />
             <Route path={'/payment'} breadcrumb="Оплата" element={<Payment />} />
             <Route path={'/delivery'} breadcrumb="Доставка" element={<Delivery />} />
