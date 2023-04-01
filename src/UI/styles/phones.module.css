@@ -21,6 +21,10 @@
     font-size: 20px;
 }
 
+.telephone_numbers a{
+    color: #53524f;
+}
+
 
 
 
@@ -88,8 +92,9 @@
     }
 
     .telephone_numbers {
-        font-size: 5.6vw;
+        font-size: 5vw;
     }
+    
 }
 
 @media all and (max-width: 269px) {

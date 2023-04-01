@@ -14,7 +14,7 @@ const Footer = () => {
             220075, Республика Беларусь, г. Минск ул. Инженерная д.4
           </div>
           <div className={styles.footer_company_information_email} >
-            <a href="mailto:info@raidics.by">E-mail: info@raidics.by</a>
+            <a href="mailto:info@raidiks.by">E-mail: info@raidiks.by</a>
           </div>
         </div>
 
@@ -27,7 +27,8 @@ const Footer = () => {
           <span className={styles.footer_phones_icon}></span>
           <div className={styles.footer_phones_numbers}>
             <div><a href={`tel:${telephones.tel1}`}>{telephones.tel1}</a></div>
-            <div><a href={`tel:${telephones.tel2}`}>{telephones.tel2}</a></div>
+            <div style={{ paddingTop: '2px', paddingBottom: "2px" }}><a href={`tel:${telephones.tel2}`}>{telephones.tel2}</a></div>
+            <div><a href={`tel:${telephones.tel3}`}>{telephones.tel3}</a></div>
           </div>
         </div>
 
