@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 // import styles from './styles/products.module.css';
-import styles from './styles/maintest.module.css';
+import styles from './styles/main.module.css';
 
-const ProductCardFallback = ({ product }) => {
+const MainProductCardFallback = ({ product }) => {
     return (
         <Link to={`${product.url}/${product.id}`} key={product.id}
             className={styles.preview_card}
@@ -15,4 +15,4 @@ const ProductCardFallback = ({ product }) => {
     );
 };
 
-export default ProductCardFallback;
+export default MainProductCardFallback;

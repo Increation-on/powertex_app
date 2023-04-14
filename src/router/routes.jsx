@@ -1,10 +1,10 @@
 import About from "../pages/About";
 import Delivery from "../pages/Delivery";
 import Main from "../pages/Main";
-import MainTest from "../pages/TestComponents/MainTest";
 import Payment from "../pages/Payment";
 import Product from "../pages/Product";
 import Products from "../pages/Products";
+import MobileMain from './../pages/mobile/MobileMain';
 
 const NamesById = {
     1: "Powertex A",
@@ -25,11 +25,11 @@ export const DynamicBreadcrumb = ({ match }) => {
 
 
 export const routes = [
-    { path: "/main", breadcrumb: "Главная", component: MainTest },
+    { path: "/main", breadcrumb: "Главная", component: Main },
     { path: "/about", breadcrumb: "О компании", component: About },
     { path: "/payment", breadcrumb: "Оплата", component: Payment },
     { path: "/delivery", breadcrumb: "Доставка", component: Delivery },
     { path: "/products", breadcrumb: "Продукция", component: Products },
-    { path: "/", breadcrumb: "Главная", component: MainTest },
+    { path: "/", breadcrumb: "Главная", component: Main },
     { path: "products/:id", breadcrumb: DynamicBreadcrumb, component: Product },
 ]

@@ -11,8 +11,8 @@ const App = () => {
     <BrowserRouter>
       <div className='wrapper'>
         <Header />
-        {/* <AppRouter /> */}
-        <AppRouterTest/>
+        {/* <AppRouterTest /> */}
+        <AppRouter/>
         <Footer />
         <ScrollToTop/>
       </div>
