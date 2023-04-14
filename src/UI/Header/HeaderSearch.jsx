@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import styles from './styles/headersearch.module.css';
-import search from './../../../images/search_icon.png';
-import close from './../../../images/close_icon_1.png';
+import styles from './../styles/headersearch.module.css';
+import search from './../../images/search_icon.png';
+import close from './../../images/close_icon_1.png';
 import axios from "axios";
 import { Link } from "react-router-dom";
 

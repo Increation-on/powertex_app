@@ -1,9 +1,9 @@
-import styles from './styles/logotest.module.css';
+import styles from './styles/mobileLogo.module.css';
 import logo from './../../../images/logo3.png';
 import { useLocation, NavLink } from 'react-router-dom';
 
 
-const LogoTest = () => {
+const MobileLogo = () => {
 
     const location = useLocation();
     const path = location.pathname;
@@ -17,4 +17,4 @@ const LogoTest = () => {
     )
 }
 
-export default LogoTest;
+export default MobileLogo;

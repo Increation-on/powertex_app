@@ -1,7 +1,7 @@
-import HeaderTop from "./HeaderTop";
 import Breadcrumbs from './Breadcrumbs';
-import HeaderTopTest from "./../Header/TestHeader/HeaderTopTest";
+import HeaderTop from "./HeaderTop";
 import { useState, useEffect } from "react";
+import MobileHeaderTop from './mobile/MobileHeaderTop';
 
 const Header = () => {
 
@@ -17,10 +17,10 @@ const Header = () => {
     <>
       {/* <HeaderTop/> */}
       {/* <HeaderTopTest /> */}
-      {screenWidth <= 860 ? < HeaderTop /> : <HeaderTopTest />}
+      {screenWidth <= 860 ? < MobileHeaderTop /> : <HeaderTop />}
       <Breadcrumbs />
     </>
   )
 }
 
-export default Header
+export default Header;
