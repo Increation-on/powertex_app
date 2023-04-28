@@ -15,8 +15,12 @@ img {
 }
 
 .logo_wrapper {
-    margin-top: 5px;
+    position: relative;
+    margin-left: 1.5vw;
+    padding-bottom: 2px;
 }
+
+
 
 /* MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
