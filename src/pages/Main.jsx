@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loader from './../UI/Loader';
 import MainProductCardFallback from './MainProductCardFallback';
+import { Helmet } from 'react-helmet';
 
 const LazyProductCard = React.lazy(() => import('./MainProductCard'));
+
 
 const Main = () => {
 
