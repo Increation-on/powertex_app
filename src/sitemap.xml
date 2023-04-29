@@ -1,0 +1,32 @@
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://powertex.by/</loc>
+<priority>0.5</priority>
+<changefreq>never</changefreq>
+<lastmod>2023-04-29</lastmod>
+</url>
+<url>
+<loc>https://powertex.by/about</loc>
+<priority>0.5</priority>
+<changefreq>never</changefreq>
+<lastmod>2023-04-29</lastmod>
+</url>
+<url>
+<loc>https://powertex.by/products</loc>
+<priority>0.5</priority>
+<changefreq>never</changefreq>
+<lastmod>2023-04-29</lastmod>
+</url>
+<url>
+<loc>https://powertex.by/payment</loc>
+<priority>0.5</priority>
+<changefreq>never</changefreq>
+<lastmod>2023-04-29</lastmod>
+</url>
+<url>
+<loc>https://powertex.by/delivery</loc>
+<priority>0.5</priority>
+<changefreq>never</changefreq>
+<lastmod>2023-04-29</lastmod>
+</url>
+</urlset>

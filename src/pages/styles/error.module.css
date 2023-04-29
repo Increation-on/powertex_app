@@ -27,11 +27,11 @@
     background-color: #ebecec;
 }
 
-a {
+.error_main_link a {
     color: #53524f;
 }
 
-a:hover {
+.error_main_link a:hover {
     color: #fd3400;
 }
 

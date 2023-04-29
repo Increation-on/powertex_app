@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /index.php
+Disallow: /index.html
+
+Sitemap: https://powertex.by/sitemap.xml
