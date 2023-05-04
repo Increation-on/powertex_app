@@ -8,6 +8,7 @@ import Payment from "../pages/Payment";
 import Product from "../pages/Product";
 import Products from "../pages/Products";
 // import { routes } from './routes';
+import ErrorPage from './../pages/ErrorPage';
 
 
 const NamesById = {
@@ -45,6 +46,7 @@ const AppRouterTest = () => {
             <Route path={'/payment'} breadcrumb="Оплата" element={<Payment />} />
             <Route path={'/delivery'} breadcrumb="Доставка" element={<Delivery />} />
             <Route path={'/products'} breadcrumb="Продукция" element={<Products />} />
+            <Route path={'/error'} element={<ErrorPage />} />
             <Route path={'/products/:id'} breadcrumb={DynamicBreadcrumb} element={<Product />} />
         </Routes>
     )

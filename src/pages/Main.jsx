@@ -26,6 +26,10 @@ const Main = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Powertex</title>
+        <meta name="description" content="Приобрести в Минске гидроизоляцию, ветрозащиту, пароизоляцию, гидро-ветрозащитную мембрану для защиты элементов кровли, утеплителя от влаги, пара, конденсата" />
+      </Helmet>
       <main className={styles.main}>
         <div className={styles.main_wrapper}>
           <div className={styles.animation_top}></div>
