@@ -7,9 +7,8 @@ const Delivery = () => {
     <>
       <Helmet>
         <title>Powertex - Доставка</title>
-        <meta name="description" content="Доставка товаров осуществляется по всем регионам страны, а также возможен самовывоз" />
+        <meta name="description" content="Осуществляем доставку, условия доставки договорные. Индивидуальный поход к каждому клиенту." />
       </Helmet>
-
       <div className={styles.delivery_wrapper}>
         <div className={styles.delivery_bg}>
           <div className={styles.delivery}>

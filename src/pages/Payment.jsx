@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from './styles/payment.module.css';
+import { Helmet } from 'react-helmet';
 
 const Payment = () => {
   return (
-    <div className={styles.payment_wrapper}>
+    <>
+     <Helmet>
+        <title>Powertex</title>
+        <meta name="description" content="Вы можете зарезервировать и купить товар Powertex, позвонив или написав нам с указанием наименования и кол-ва товара. После оплаты наш менеджер свяжется с Вами для согласования доставки, либо самовывоза." />
+      </Helmet>
+     <div className={styles.payment_wrapper}>
       <div className={styles.payment_bg}>
         <div className={styles.payment}>
           <h1 className={styles.payment_header}>Способы Оплаты</h1>
@@ -21,6 +27,8 @@ const Payment = () => {
         </div>
       </div>
     </div>
+    </>
+   
   )
 }
 
