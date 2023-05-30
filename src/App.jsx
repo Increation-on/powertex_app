@@ -49,7 +49,7 @@ const App = () => {
           ?
           <div className='wrapper'>
             <Routes>
-              <Route path={'*'} element={<ErrorPage />} />
+              <Route path={'*'} element={<ErrorPage status={404} />} />
             </Routes>
 
           </div>

@@ -46,7 +46,8 @@ const AppRouterTest = () => {
             <Route path={'/payment'} breadcrumb="Оплата" element={<Payment />} />
             <Route path={'/delivery'} breadcrumb="Доставка" element={<Delivery />} />
             <Route path={'/products'} breadcrumb="Продукция" element={<Products />} />
-            <Route path={'/error'} element={<ErrorPage />} />
+            <Route path={'/error'} element={<ErrorPage status={404} />} />
+            <Route path={'*'} element={<ErrorPage status={404} />} />
             <Route path={'/products/:id'} breadcrumb={DynamicBreadcrumb} element={<Product />} />
         </Routes>
     )
