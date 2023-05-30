@@ -17,23 +17,21 @@ const App = () => {
   const [productsId, setProductsId] = useState([]);
 
   useEffect(() => {
-    axios.get('/mocks/products.json').then(response => {
-      const data = response.data;
-      setProducts(data);
-    }).catch(err => console.log(err));
-
-    const addProductsId = async () => {
-      let prodId = [];
-      if (products) {
-        await products.map(el => {
-          prodId.push(`/products/${el.id}`);
-          return 1;
-        })
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('/mocks/products.json');
+        setProducts(response.data);
+  
+        let prodId = response.data.map(el => `/products/${el.id}`);
+        setProductsId(prodId);
+      } catch (error) {
+        console.error(error);
       }
-      setProductsId(prodId);
     };
-    addProductsId();
-
+  
+    if (!products) {
+      fetchData(); // Операция выполнится только один раз при первом рендеринге компонента
+    }
   }, [products]);
 
   const { pathname } = useLocation();
@@ -51,7 +49,6 @@ const App = () => {
             <Routes>
               <Route path={'*'} element={<ErrorPage status={404} />} />
             </Routes>
-
           </div>
           :
           <div className='wrapper'>
