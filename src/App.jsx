@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/mocks/products.json');
+        const response = await axios.get('https://server.powertex.by/products');
         setProducts(response.data);
   
         let prodId = response.data.map(el => `/products/${el.id}`);
@@ -30,7 +30,7 @@ const App = () => {
     };
   
     if (!products) {
-      fetchData(); // Операция выполнится только один раз при первом рендеринге компонента
+      fetchData(); // Операция выполнится только один раз при первом рендере компонента
     }
   }, [products]);
 
@@ -47,7 +47,7 @@ const App = () => {
           ?
           <div className='wrapper'>
             <Routes>
-              <Route path={'*'} element={<ErrorPage status={404} />} />
+              <Route path={'*'} element={<ErrorPage/>} status={404} />
             </Routes>
           </div>
           :

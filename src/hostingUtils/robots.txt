@@ -3,5 +3,6 @@ Allow: /
 Disallow: /index.php
 Disallow: /index.html
 Disallow: /?
+Disallow: http://server.powertex.by/
 
 Sitemap: https://powertex.by/sitemap.xml

@@ -48,11 +48,11 @@ const About = () => {
             <div className={styles.about_address_description_column}>НАШИ АДРЕСА:</div>
           </div>
 
-          <div className={styles.about_address_item}>г. Минск, ул. Инженерная д.4 {`(офис)`}</div>
-          <div className={styles.about_address_item}>г. Минск, ул. Селицкого 113/2 {`(склад)`}</div>
-          <div className={styles.about_address_index}>Почтовый индекс - 220075</div>
+          <div className={styles.about_address_item}>г. Минск, ул. Липковская д.9/5 пом. 32 {`(офис)`}</div>
+          <div className={styles.about_address_item}>г. Минск, пер. Липковский 30-4 {`(склад)`}</div>
+          <div className={styles.about_address_index}>Почтовый индекс - 220138</div>
           <div className={styles.about_address_requisites}>
-            <b>Банковские реквизиты:</b>
+            <b>Реквизиты банка:</b>
             <br />
             <br />УНП: 193620401, р/c: BY 40 PJCB 3012 0717311000000 933 в Приорбанк ОАО
             <br />
@@ -68,10 +68,19 @@ const About = () => {
             <div className={styles.about_search_column}>КАК НАС НАЙТИ ?</div>
           </div>
           <button onClick={() => { scrollTop() }} className={styles.about_scroll_top_button}>&#8593;</button>
-          <iframe
+
+          {/* <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A463b39930642139ae58f9a550f6d7d0fa27e283437ca2379ada8a113b73e05f2&amp;source=constructor"
             width="500" height="600"
             title='map'>
+          </iframe> */}
+
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9fe9c1b9e9878e5461b0fd4c96b7e9cb86e167b8888d5b58679f0bccc20a8e5&amp;source=constructor"
+            width="500"
+            height="600"
+            frameborder="0"
+            title='map'
+          >
           </iframe>
 
         </div>

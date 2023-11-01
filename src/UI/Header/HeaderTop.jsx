@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 import Phones from './Phones';
 import HeaderSearch from './HeaderSearch';
+import RequestService from '../../api/RequestService';
 
 
 
@@ -12,19 +13,21 @@ const HeaderTopTest = () => {
 
     const [menu, setMenu] = useState();
 
-    useEffect(() => {
-        axios.get('/mocks/headerNav.json').then(response => {
-            const data = response.data;
-            setMenu(data);
-        }).catch(err => console.log(err));
-    }, []);
-
     // useEffect(() => {
-    //     axios.get('http://localhost:8000/nav').then(response => {
+    //     axios.get('/mocks/headerNav.json').then(response => {
     //         const data = response.data;
-    //         setTestMenu(data.values);
+    //         setMenu(data);
     //     }).catch(err => console.log(err));
     // }, []);
+
+    useEffect(() => {
+        const fetchMenu = async () => {
+          const response = await RequestService.getNavbar();
+          const data = response;
+          setMenu(data);
+        }
+        fetchMenu();
+      }, []);
 
     return (
         <header className={styles.header}>

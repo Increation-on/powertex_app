@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loader from './../UI/Loader';
 import ProductCardFallback from './ProductCardFallback';
+import RequestService from '../api/RequestService';
 
 const LazyProductCard = React.lazy(() => import('./ProductCard'));
 
@@ -12,13 +13,23 @@ const Products = () => {
 
   const [products, setProducts] = useState(null);
 
+  // useEffect(() => {
+
+  //   axios.get('/mocks/products.json').then(response => {
+  //     const data = response.data;
+  //     setProducts(data);
+  //   }).catch(err => console.log(err));
+
+  // }, []);
+
+
   useEffect(() => {
-
-    axios.get('/mocks/products.json').then(response => {
-      const data = response.data;
+    const fetchProducts = async () => {
+      const response = await RequestService.getProducts();
+      const data = response;
       setProducts(data);
-    }).catch(err => console.log(err));
-
+    }
+    fetchProducts();
   }, []);
 
 

@@ -6,6 +6,7 @@ import axios from 'axios';
 import Loader from './../UI/Loader';
 import MainProductCardFallback from './MainProductCardFallback';
 import { Helmet } from 'react-helmet';
+import RequestService from '../api/RequestService';
 
 const LazyProductCard = React.lazy(() => import('./MainProductCard'));
 
@@ -14,19 +15,29 @@ const Main = () => {
 
   const [products, setProducts] = useState(null);
 
+  // useEffect(() => {
+
+  //   axios.get('/mocks/products.json').then(response => {
+  //     const data = response.data;
+  //     setProducts(data);
+  //   }).catch(err => console.log(err));
+
+  // }, []);
+
   useEffect(() => {
-
-    axios.get('/mocks/products.json').then(response => {
-      const data = response.data;
+    const fetchProducts = async () => {
+      const response = await RequestService.getProducts();
+      const data = response;
       setProducts(data);
-    }).catch(err => console.log(err));
-
+    }
+    fetchProducts();
   }, []);
 
+  
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Powertex</title>
         <meta name="description" content="Приобрести в Минске гидроизоляцию, ветрозащиту, пароизоляцию, гидро-ветрозащитную мембрану для защиты элементов кровли, утеплителя от влаги, пара, конденсата" />
       </Helmet>
@@ -84,9 +95,6 @@ const Main = () => {
       </main>
 
     </>
-
-
-
   )
 }
 

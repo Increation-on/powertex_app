@@ -309,6 +309,54 @@
 }
 
 
+/* //////////////////////// m-h, m-w media 1599 */
+
+@media all and (max-width: 1599px) and (min-height: 1320px) {
+  .main_wrapper {
+    height: 70vh;
+  }
+  .main {
+    margin-top: 20vh;
+  }
+  .main_wave {
+    margin-top: -180px;
+  }
+}
+
+
+/* //////////////////////// m-h, m-w media 1024*/
+
+@media all and (max-width: 1024px) and (min-height: 1320px) {
+  .animation_top {
+    width: 40vw;
+    height: 8vh;
+    top: 8vh;
+    animation-duration: 1.2s;
+    animation-name: slidetop_m-h-1320;
+  }
+
+  .main_wrapper {
+    height: 60vh;
+  }
+
+  .animation_left {
+    font-size: 3.9vw;
+  }
+
+  .animation_right {
+    font-size: 3.9vw;
+  }
+}
+
+@keyframes slidetop_m-h-1320 {
+  from {
+    top: -25%;
+  }
+
+  to {
+    top: 8vh;
+  }
+}
 
 
 /* //////////////4k////////////////// */

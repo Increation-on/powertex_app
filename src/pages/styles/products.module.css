@@ -31,6 +31,7 @@
     -moz-transition: background-size .4s ease-in;
     -web-kit-transition: background-size .4s ease-in;
     height: 500px;
+    overflow: hidden;
 }
 
 
@@ -70,7 +71,7 @@
     border: 1px solid red;
 } */
 
-.title_test {
+.title {
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
@@ -83,7 +84,7 @@
     background-color:rgba(235, 236, 236, 0.6);
 }
 
-.description_test {
+.description {
     color: #53524f;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -95,6 +96,7 @@
     padding: 10px;
     padding-top: 12px;
     background-color:rgba(235, 236, 236, 0.6);
+    overflow: hidden;
 }
 
 
@@ -104,12 +106,12 @@
 
 @media all and (max-width: 1250px) {
     .products_wrapper {
-        grid-template-columns: repeat(3, 27vw);
-        gap: 20px;
+        grid-template-columns: repeat(3, 30vw);
+        gap: 30px;
     }
 
     .preview_card {
-        height: 30vh;
+        height: 50vh;
     }
 }
 
@@ -117,6 +119,8 @@
     .preview_card {
         height: 50vh;
     }
+    
+    
 }
 
 @media all and (max-width: 859px) {

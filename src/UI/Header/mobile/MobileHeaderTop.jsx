@@ -11,7 +11,7 @@ const MobileHeaderTop = () => {
     const [menu, setMenu] = useState();
 
     useEffect(() => {
-        axios.get('/mocks/headerNav.json').then(response => {
+        axios.get('https://server.powertex.by/nav').then(response => {
             const data = response.data;
             setMenu(data);
         }).catch(err => console.log(err));

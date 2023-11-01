@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div className={styles.footer_company_information}>
           <div className={styles.footer_company_information_address}>
-            220075, Республика Беларусь, г. Минск ул. Инженерная д.4
+            220138, РБ, г. Минск ул. Липковская д.9/5 пом.32
           </div>
           <div className={styles.footer_company_information_email} >
             <a href="mailto:info@raidiks.by">E-mail: info@raidiks.by</a>

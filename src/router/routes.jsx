@@ -26,6 +26,7 @@ export const DynamicBreadcrumb = ({ match }) => {
 
 export const routes = [
     { path: "/main", breadcrumb: "Главная", component: Main },
+    { path: "/", breadcrumb: "Главная", component: Main },
     { path: "/about", breadcrumb: "О компании", component: About },
     { path: "/payment", breadcrumb: "Оплата", component: Payment },
     { path: "/delivery", breadcrumb: "Доставка", component: Delivery },

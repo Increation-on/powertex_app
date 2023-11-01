@@ -14,7 +14,7 @@ const HeaderSearch = () => {
 
     useEffect(() => {
 
-        axios.get('/mocks/appSearch.json').then(response => {
+        axios.get('https://server.powertex.by/app_search').then(response => {
             const data = response.data;
             setDataList(data);
         }).catch(err => console.log(err));
